@@ -11,6 +11,10 @@
     src: url("../assets/font/Montserrat-Light.ttf");
 }
 
+.body{
+    margin: 0px;
+}
+
 /* - estilos barra de navegacion - */
 .nav-bar{
     display: flex;
@@ -199,4 +203,89 @@
 
 .arrow-home{
     margin-left: 44px;
+}
+
+/* - estilos sobre nosotros - */
+.about{
+    background-color: #1b1b1d;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+}
+
+.about-right{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.titles-h2{
+    font-family: "montserrat-bold";
+    font-size: 40px;
+    margin-top: 0px;
+    padding-bottom: 20px;
+}
+
+.about-text{
+    font-family: "montserrat-medium";
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+.cv{
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.span{
+    color:#F68E94;
+}
+
+/* - estilos servicios - */
+.services{
+    background-color: #A88ECA;
+    color: #f3f3f3;
+}
+
+.services-title{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding-top: 100px;
+    font-family: "montserrat-bold";
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+.card{
+    background-color: #1b1b1d;
+    border-radius: 25px;
+    width: 608px;
+    height: 344px;
+}
+
+.card-up{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.card-down{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.card-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
 }
