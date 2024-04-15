@@ -1,0 +1,114 @@
+@font-face{
+    font-family: "montserrat-bold";
+    src: url("../assets/font/Montserrat-Bold.ttf");
+    font-family: "montserrat-semibold";
+    src: url("../assets/font/Montserrat-SemiBold.ttf");
+    font-family: "montserrat-medium";
+    src: url("../assets/font/Montserrat-Regular.ttf");
+    font-family: "montserrat-regular";
+    src: url("../assets/font/Montserrat-Regular.ttf");
+    font-family: "montserrat-light";
+    src: url("../assets/font/Montserrat-Light.ttf");
+}
+
+
+/* - estilos barra de navegacion - */
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    margin-left: 44px;
+    margin-right: 44px;
+    text-decoration: none;
+
+}
+
+.logo-home{
+    width: 66px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 50px;
+    font-family: "montserrat-medium";
+    font-size: 16px;
+    color: #1b1b1d;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.nav-link{
+    width: 88px;
+    color: #1b1b1d;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: #F68E94;
+}
+
+.btn-contact{
+    background-color: #F68E94;
+    border: none;
+    padding: 10px;
+    font-family: "montserrat-medium";
+    font-size: 16px;
+    height: 36px;
+    border-radius: 10px;
+    color: #f3f3f3;
+    box-shadow: 0 0.4rem #000000;
+    cursor: pointer;
+}
+
+.btn-contact:active {
+    color: white;
+    box-shadow: 0 0.2rem #000000;
+    transform: translateY(0.2rem);
+}
+
+.btn-contact:hover:not(:disabled) {
+    background: #F68E94;
+    color: white;
+}
+
+.btn-contact:disabled {
+    cursor: auto;
+    color: #F68E94;
+}
+
+/* - estilos header - */
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 44px;
+    margin-right: 44px;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-home{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-home{
+    width: 487px;
+    margin-bottom: 15px;
+    font-family: "montserrat-bold";
+    font-size: 50px;
+}
+
+.titletext-home{
+    width: 366px;
+    margin: 0px;
+    font-family: "montserrat-medium";
+    font-size: 16px;
+}
