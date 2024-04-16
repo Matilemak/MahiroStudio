@@ -251,6 +251,8 @@
 .services{
     background-color: #A88ECA;
     color: #f3f3f3;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 
 .services-title{
@@ -264,15 +266,91 @@
 }
 
 .card{
-    background-color: #1b1b1d;
+    display: flex;
+    flex-direction: row;
     border-radius: 25px;
     width: 608px;
     height: 344px;
+    perspective: 1000px;
+}
+
+.card-inner{
+    width: 608px;
+    height: 344px;
+    border-radius: 25px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    width: 608px;
+    height: 344px;
+    border-radius: 25px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    background-color: #1b1b1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    background-color: #F68E94;
+    color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+
+}
+
+.checkmark{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.checkmark-icon{
+    padding-left: 0px;
+    padding-top: 2px;
+    width: 18px;
+    height: 18px;
+}
+
+.card-title{
+    font-family: "monstserrat-semibold";
+    font-size: 36px;
+    margin: 0px;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-bottom: 50px;
+}
+
+.ul{
+    padding: 0px;
+}
+
+.card-text{
+    font-family: "monstserrat-regular";
+    font-size: 20px;
+    margin: 0px 0px 10px 0px;
+    padding-left: 15px;
 }
 
 .card-up{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 30px;
     margin-bottom: 30px;
 }
@@ -280,6 +358,7 @@
 .card-down{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 30px;
 }
 
@@ -288,4 +367,21 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: 20px;
+}
+
+.card-right{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.icon-card{
+    width: 150px;
+    height: 150px;
+}
+
+.icon-card2{
+    width: 150px;
+    height: 150px;
+    padding-left: 40px;
 }
