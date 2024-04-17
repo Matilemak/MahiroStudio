@@ -385,3 +385,163 @@
     height: 150px;
     padding-left: 40px;
 }
+
+.title-cert{
+    display: flex;
+    justify-content: center;
+    font-family: "montserrat-bold";
+    font-size: 40px;
+}
+
+.cert-text{
+    display: flex;
+    justify-content: center;
+    font-family: "montserrat-medium";
+    font-size: 20px;
+    padding: 0% 20% 0% 23%;
+    margin-bottom: 100px;
+}
+
+/* - estilos certificaciones - */
+.certs1, .certs2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 72px;
+    font-family: "montserrat-medium";
+    font-size: 16px;
+    margin-bottom: 100px;
+}
+
+.icon-cert{
+    display: flex;
+    margin-bottom: 62px;
+}
+
+.icon-text{
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    height: 25px;
+}
+
+/* - estilos CTA HOME  - */
+.cta-end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 550px;
+    background-color: #A88ECA;
+}
+
+.cta-text{
+    display: flex;
+    justify-content: center;
+    font-family: "montserrat-bold";
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-size: 50px;
+    color: #f3f3f3;
+    letter-spacing: 2px;
+}
+
+.btn-end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "montserrat-semibold";
+    font-size: 24px;
+    background-color: #1b1b1d;
+    color: #f3f3f3;
+    border: none;
+    padding: 10px;
+    width: 515px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0.4rem #000000;
+    cursor: pointer;
+}
+
+.btn-end:active {
+    color: white;
+    box-shadow: 0 0.2rem #000000;
+    transform: translateY(0.2rem);
+}
+
+.btn-end:hover:not(:disabled) {
+    background: #1b1b1d;
+    color: white;
+}
+
+.btn-end:disabled {
+    cursor: auto;
+    color: #1b1b1d;
+}
+
+/* - estilos footer - */
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1b1b1d;
+    color: #f3f3f3;
+    padding: 25px;
+}
+
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 172px;
+    height: 60px;
+}
+
+.footer-img{
+    width: 60px;
+    height: 60px;
+}
+
+.logo-text{
+    display: flex;
+    font-family: "monstserrat-regular";
+    font-size: 18px;
+    padding-top: 21px;
+    padding-left: 2px;
+    width: 83px;
+    height: 60px;
+}
+
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+    color: #f3f3f3;
+}
+
+.footer-services{
+    display: flex;
+    flex-direction: column;
+    color: #f3f3f3;
+}
+
+.footer-sm{
+    display: flex;
+    flex-direction: column;
+    color: #f3f3f3;
+}
+
+.ul2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    padding: 0px;
+    gap: 20px;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    margin-right: 44px;
+}
