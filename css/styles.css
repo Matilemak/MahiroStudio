@@ -1,3 +1,6 @@
+
+
+/*# sourceMappingURL=styles.css.map */
 @font-face{
     font-family: "montserrat-bold";
     src: url("../assets/font/Montserrat-Bold.ttf");
@@ -13,6 +16,11 @@
 
 .body{
     margin: 0px;
+}
+
+.alinks{
+    list-style-type: none;
+    text-decoration: none;
 }
 
 /* - estilos barra de navegacion - */
@@ -544,4 +552,16 @@
     flex-direction: row;
     gap: 80px;
     margin-right: 44px;
+}
+
+.footer-text{
+    font-family: "montserrat-medium";
+    font-size: 16px;
+    color: #f3f3f3;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.footer-text:hover{
+    color: #F68E94;
 }
