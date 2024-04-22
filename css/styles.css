@@ -111,7 +111,7 @@
   background-color: #1b1b1d;
   color: #f3f3f3;
   border-radius: 25px;
-  gap: 15px;
+  gap: 25px;
   margin-bottom: 100px;
   height: 345px;
   margin-left: 44px;
@@ -328,6 +328,138 @@
 .headerp .arrow-headerf {
   width: 40px;
   height: 40px;
+}
+
+.background-ctap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1b1b1d;
+  color: #f3f3f3;
+  border-radius: 25px;
+  gap: 25px;
+  margin-bottom: 100px;
+  height: 345px;
+  margin-left: 44px;
+  margin-right: 44px;
+}
+.background-ctap .ctap-title {
+  font-family: "montserrat-bold";
+  font-size: 35px;
+  width: 730px;
+  margin: 0px;
+}
+.background-ctap .ctap-text {
+  font-family: "montserrat-medium";
+  font-size: 20px;
+  width: 720px;
+  margin: 0px;
+}
+.background-ctap .btn-ctap {
+  font-family: "montserrat-semibold";
+  font-size: 20px;
+  background-color: #F68E94;
+  color: #f3f3f3;
+  border: none;
+  padding: 10px;
+  width: 720px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0.4rem #000000;
+  cursor: pointer;
+}
+.background-ctap .btn-ctap:active {
+  color: #F68E94;
+  box-shadow: 0 0.2rem #000000;
+  transform: translateY(0.2rem);
+}
+.background-ctap .btn-ctap:hover:not(:disabled) {
+  background: #F68E94;
+  color: #f3f3f3;
+}
+.background-ctap .btn-ctap:disabled {
+  cursor: auto;
+  color: #f3f3f3;
+}
+
+.proyectos-background {
+  background-color: #f3f3f3;
+}
+.proyectos-background .proyectos {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  margin-left: 44px;
+  margin-right: 44px;
+}
+.proyectos-background .proyectos-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.proyectos-background .proyectos-title {
+  font-family: "montserrat-bold";
+  font-size: 40px;
+}
+.proyectos-background .proyectos-text {
+  font-family: "montserrat-regular";
+  font-size: 16px;
+}
+.proyectos-background .proyect1, .proyectos-background .proyect2, .proyectos-background .proyect3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #1b1b1d;
+  box-shadow: 0px 6px 16px #000000;
+  border-radius: 50px;
+  color: #f3f3f3;
+  gap: 45px;
+  padding: 45px;
+  margin-bottom: 30px;
+}
+.proyectos-background .project-img {
+  display: flex;
+  width: 650px;
+  border-radius: 25px;
+}
+.proyectos-background .title-project {
+  font-family: "montserrat-bold";
+  font-size: 24px;
+}
+.proyectos-background .text-project {
+  font-family: "montserrat-regular";
+  font-size: 16px;
+  padding-bottom: 80px;
+  width: 650px;
+}
+.proyectos-background .btn-project {
+  font-family: "montserrat-semibold";
+  font-size: 20px;
+  background-color: #f3f3f3;
+  color: #1b1b1d;
+  border: none;
+  padding: 10px;
+  width: 650px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0.4rem #000000;
+  cursor: pointer;
+}
+.proyectos-background .btn-project:active {
+  color: #F68E94;
+  box-shadow: 0 0.2rem #000000;
+  transform: translateY(0.2rem);
+}
+.proyectos-background .btn-project:hover:not(:disabled) {
+  background: #F68E94;
+  color: #f3f3f3;
+}
+.proyectos-background .btn-project:disabled {
+  cursor: auto;
+  color: #f3f3f3;
 }
 
 @font-face {
