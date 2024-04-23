@@ -1,0 +1,108 @@
+.contacto{
+    display: flex;
+    margin: 50px 44px;
+    .container-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $rojo;
+        color: $blanco-var;
+        border-radius: 30px;
+        padding-top: 15%;
+        padding-bottom: 15%;
+        width: 50%;
+    }
+    .contact-title{
+        font-family: $bold;
+        font-size: 40px;
+        text-align: center;
+        width: 415px;
+        margin-bottom: 16px;
+    }
+    .contact-text{
+        font-family: $medium;
+        font-size: 20px;
+        text-align: center;
+        width: 350px;
+        margin: 0px;
+    }
+    .contact-img{
+        width: 28%;
+    }
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: $blanco-var;
+    color: $negro-var;
+    border-radius: 30px;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    width: 50%;
+    .form-title{
+        font-family: $bold;
+        font-size: 40px;
+        margin-left: 25%;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    .form-text{
+        font-family: $medium;
+        font-size: 20px;
+        margin-left: 25%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .form-text{
+        font-family: $medium;
+        font-size: 16px;
+        margin-left: 25%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .form-input{
+        font-family: $medium;
+        font-size: 16px;
+        width: 450px;
+        height: 32px;
+        margin-left: 25%;
+        border-radius: 20px;
+        outline: none;
+    }
+    .form-input:hover {
+        box-shadow: 0 0 0 .1rem $rojo;
+    }
+
+    .form-input:focus {
+        box-shadow: 0 0 0 0.2rem $rojo;
+    }
+    .form-inputm{
+        font-family: $medium;
+        font-size: 16px;
+        width: 450px;
+        height: 100px;
+        margin-left: 25%;
+        margin-bottom: 25px;
+        padding: 10px;
+        border-radius: 20px;
+        outline: none;
+    }
+    .form-inputm:hover {
+        box-shadow: 0 0 0 .15rem $rojo;
+    }
+    .form-inputm:focus {
+        box-shadow: 0 0 0 0.3rem $rojo;
+    }
+    .btn{
+        display: flex;
+        flex-direction: row;
+        margin-left: 25%;
+        gap: 25px;
+    }
+    .send, .erase{
+        width: 160px;
+    }
+}

@@ -95,17 +95,46 @@
     height: 345px;
     margin-left: 44px;
     margin-right: 44px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    }
+    .background-ctaf:hover::before {
+        content: '';
+        width: 110%;
+        height:150%;
+        position: absolute;
+        top: -100px;
+        left: -100px;
+        right: -100px;
+        bottom: -100px;
+        border-radius: 25px;
+        background: linear-gradient(180deg, transparent, $rojo, $morado, transparent);
+        z-index: -1;
+        transition: box-shadow 300ms;
+        animation: rotation_481 5000ms infinite linear;
+    }
+    .background-ctaf:hover::after {
+        content: '';
+        position: absolute;
+        background: $negro-var;
+        inset: 5px;
+        border-radius: 25px;
+        z-index: -1;
+    }
         .ctaf-title{
             font-family: $bold;
             font-size: 35px;
             width: 675px;
             margin: 0px;
+            z-index: 1;
         }
         .ctaf-text{
             font-family: $medium;
             font-size: 20px;
             width: 670px;
             margin: 0px;
+            z-index: 1;
         }
         .btn-ctaf{
             font-family: $semibold;
@@ -119,23 +148,27 @@
             border-radius: 10px;
             box-shadow: 0 0.4rem $negro;
             cursor: pointer;
+            z-index: 1;
         }
         .btn-ctaf:active {
             color: $rojo;
             box-shadow: 0 0.2rem $negro;
             transform: translateY(0.2rem);
+            z-index: 1;
         }
         
         .btn-ctaf:hover:not(:disabled) {
             background: $rojo;
             color: $blanco-var;
+            z-index: 1;
         }
         
         .btn-ctaf:disabled {
             cursor: auto;
             color: $blanco-var;
+            z-index: 1;
         }
-}
+
 
 .gallery{
     display: grid;
