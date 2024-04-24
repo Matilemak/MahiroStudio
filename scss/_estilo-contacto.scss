@@ -8,7 +8,8 @@
         align-items: center;
         background-color: $rojo;
         color: $blanco-var;
-        border-radius: 30px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
         padding-top: 15%;
         padding-bottom: 15%;
         width: 50%;
@@ -38,10 +39,11 @@
     align-items: flex-start;
     background-color: $blanco-var;
     color: $negro-var;
-    border-radius: 30px;
     padding-top: 15%;
     padding-bottom: 15%;
     width: 50%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
     .form-title{
         font-family: $bold;
         font-size: 40px;
