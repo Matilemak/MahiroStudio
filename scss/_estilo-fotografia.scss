@@ -17,20 +17,21 @@
             height: 122px;
             text-align: right;
             position: relative;
-            top: 75px;
-            left: 260px;
+            top: 80px;
+            left: 290px;
         }
         .img-headerf{
-            width: 25%;
-            height: 25%;
+            width: 34%;
+            height: 34%;
             position: relative;
-            top: 70px;
-            left: -300px;
+            transform: rotate(10deg);
+            top: 0px;
+            left: -280px;
         }
         .background-headerf{
             position: relative;
-            top: 0px;
-            left: 160px;
+            top: 10px;
+            left: 200px;
             width: 39%;
         }
         .header-textf2{
@@ -40,8 +41,8 @@
             height: 110px;
             text-align: left;
             position: relative;
-            top: 155px;
-            left: -315px;
+            top: 145px;
+            left: -350px;
         }
     .div-downf{
         display: flex;
@@ -49,7 +50,7 @@
         justify-content: space-between;
         position: relative;
         margin-top: 55px;
-        top: -80px;
+        top: -38px;
         }
         .btn-social{
             position: relative;

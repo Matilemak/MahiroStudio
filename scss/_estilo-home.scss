@@ -1,78 +1,5 @@
-
-.nav-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 24px;
-    margin-left: 44px;
-    margin-right: 44px;
-    text-decoration: none;
-}
-
-.logo-home{
-    width: 66px;
-    perspective: 500px;
-    position: relative;
-    transform-style: preserve-3d;
-    will-change: transform;
-    transition: transform 2s;
-}
-.logo-home:hover{
-    transform: translateZ(0px) rotateX(0deg) rotateY(360deg);
-}
-
-.nav-links {
-    display: flex;
-    gap: 50px;
-    font-family: "montserrat-medium";
-    font-size: 16px;
-    color: #1b1b1d;
-    list-style-type: none;
-    text-decoration: none;
-}
-
-.nav-link {
-    width: 88px;
-    color: #1b1b1d;
-    text-decoration: none;
-}
-  
-  .nav-link:hover {
-    color: #F68E94;
-  }
-  
-  .btn-contact {
-    background-color: #F68E94;
-    border: none;
-    padding: 10px;
-    font-family: "montserrat-semibold";
-    font-size: 16px;
-    height: 36px;
-    border-radius: 10px;
-    color: #f3f3f3;
-    box-shadow: 0 0.4rem #000000;
-    cursor: pointer;
-  }
-  
-  .btn-contact:active {
-    color: white;
-    box-shadow: 0 0.2rem #000000;
-    transform: translateY(0.2rem);
-  }
-  
-  .btn-contact:hover:not(:disabled) {
-    background: #F68E94;
-    color: white;
-  }
-  
-  .btn-contact:disabled {
-    cursor: auto;
-    color: #F68E94;
-  }
-  
-  /* - estilos header - */
-  .header {
+ /* - estilos header - */
+ .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -162,15 +89,15 @@
   
   .camera {
     position: absolute;
-    width: 34%;
-    top: 110px;
-    left: 440px;
-    transform: translate(-50%, -50%);
+    width: 45%;
+    top: 120px;
+    left: 420px;
+    transform: rotate(5deg) translate(-50%, -50%);
   }
   
   .web {
     position: absolute;
-    width: 36%;
+    width: 32%;
     top: 320px;
     left: 485px;
     transform: translate(-50%, -50%);
@@ -460,80 +387,4 @@
     color: #1b1b1d;
   }
   
-  /* - estilos footer - */
-  .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #1b1b1d;
-    color: #f3f3f3;
-    padding: 25px;
-  }
-  
-  .footer-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 172px;
-    height: 60px;
-  }
-  
-  .footer-img {
-    width: 60px;
-    height: 60px;
-  }
-  
-  .logo-text {
-    display: flex;
-    font-family: "monstserrat-regular";
-    font-size: 18px;
-    padding-top: 21px;
-    padding-left: 2px;
-    width: 83px;
-    height: 60px;
-  }
-  
-  .footer-contact {
-    display: flex;
-    flex-direction: column;
-    color: #f3f3f3;
-  }
-  
-  .footer-services {
-    display: flex;
-    flex-direction: column;
-    color: #f3f3f3;
-  }
-  
-  .footer-sm {
-    display: flex;
-    flex-direction: column;
-    color: #f3f3f3;
-  }
-  
-  .ul2 {
-    display: flex;
-    flex-direction: column;
-    margin-left: 0px;
-    padding: 0px;
-    gap: 20px;
-  }
-  
-  .footer-right {
-    display: flex;
-    flex-direction: row;
-    gap: 80px;
-    margin-right: 44px;
-  }
-  
-  .footer-text {
-    font-family: "montserrat-medium";
-    font-size: 16px;
-    color: #f3f3f3;
-    list-style-type: none;
-    text-decoration: none;
-  }
-  
-  .footer-text:hover {
-    color: #F68E94;
-  }
+/* - animaciones objetos - */

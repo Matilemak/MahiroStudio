@@ -178,10 +178,12 @@
     }
     .cards-up{
         display: flex;
-        gap: 50px;
-        margin-bottom: 50px;
+        justify-content: flex-start;
+        gap: 25px;
+        margin-bottom: 25px;
+        position: relative;
     }
-        .card1m{
+        .card1{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -207,7 +209,7 @@
                 width: 275px;
                 margin-bottom: 20px;
             }
-        .card2m{
+        .card2{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
