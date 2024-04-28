@@ -1,22 +1,19 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const texts = document.querySelectorAll('.title-home, .titletext-home');
 
-const images = document.querySelectorAll('.icons-header img');
+    function fadeInText(text) {
+        text.style.opacity = '0';
+        text.style.transform = 'translateX(100px)';
+        text.style.transition = 'opacity 0.5s ease-in, transform 0.5s ease-in';
 
-function triggerAnimation(entries){
-    entries.forEach(entry =>{
-        const image = entry.target;
+        // Utilizamos setTimeout para aplicar los estilos después de un breve retraso
+        setTimeout(() => {
+            text.style.opacity = '1';
+            text.style.transform = 'translateX(0)';
+        }, 100);
+    }
 
-        image.classList.toggle('unset', entry.isIntersecting);
+    texts.forEach(text => {
+        fadeInText(text);
     });
-}
-
-const options ={
-    root: null,
-    rootMargin: "0px",
-    threshold: 1
-}
-const observer = new IntersectionObserver(triggerAnimation, options);
-
-images.forEach(image =>{
-    observer.observe(image);
 });
-

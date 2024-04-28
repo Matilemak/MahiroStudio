@@ -19,6 +19,87 @@
   src: url("../assets/font/Montserrat-Light.ttf");
 }
 /* - colores - */
+/* - animaciones imagenes headers - */
+.animation-1 {
+  overflow: hidden;
+  transform: translatey(0px);
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+.animation-2 {
+  overflow: hidden;
+  transform: translatey(0px);
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+.animation-3 {
+  overflow: hidden;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+[data-animation=fade] {
+  opacity: 0;
+  transform: translate(-100%);
+  transition: 0.6s ease-in 0.3s;
+  --opacity: 1;
+  --transform: translate(0);
+}
+
+[data-animation=show] {
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.6s ease-in 0.3s;
+  --opacity: 1;
+  --transform: scale(1);
+}
+
+[data-animation=up] {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: 0.6s ease-in 0.3s;
+  --opacity: 1;
+  --transform: translateY(0);
+}
+
+.unset {
+  opacity: var(--opacity);
+  transform: var(--transform);
+}
+
 .headerf {
   display: flex;
   flex-direction: column;
@@ -40,11 +121,11 @@
   text-align: right;
   position: relative;
   top: 80px;
-  left: 290px;
+  left: 296px;
 }
 .headerf .img-headerf {
-  width: 34%;
-  height: 34%;
+  width: 36%;
+  height: 36%;
   position: relative;
   transform: rotate(10deg);
   top: 0px;
@@ -54,7 +135,7 @@
   position: relative;
   top: 10px;
   left: 200px;
-  width: 39%;
+  width: 42%;
 }
 .headerf .header-textf2 {
   font-family: "montserrat-bold";
@@ -1455,24 +1536,24 @@
 .cellphone {
   position: absolute;
   width: 40%;
-  top: 210px;
-  left: 245px;
+  top: 90px;
+  left: 100px;
   transform: translate(-50%, -50%);
 }
 
 .camera {
   position: absolute;
   width: 45%;
-  top: 120px;
-  left: 420px;
-  transform: rotate(5deg) translate(-50%, -50%);
+  top: -40px;
+  left: 260px;
+  transform: rotate(10deg);
 }
 
 .web {
   position: absolute;
   width: 32%;
-  top: 320px;
-  left: 485px;
+  top: 220px;
+  left: 380px;
   transform: translate(-50%, -50%);
 }
 
