@@ -210,7 +210,9 @@
         .project-img{
             display: flex;
             width: 650px;
+            height: 350px;
             border-radius: 25px;
+            object-fit: cover;
         }
             .title-project{
                 font-family: $bold;
@@ -219,7 +221,7 @@
             .text-project{
                 font-family: $regular;
                 font-size: 16px;
-                padding-bottom: 80px;
+                padding-bottom: 40px;
                 width: 650px;
             }
             .btn-project{

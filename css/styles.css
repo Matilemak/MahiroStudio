@@ -153,7 +153,7 @@
   justify-content: space-between;
   position: relative;
   margin-top: 55px;
-  top: -38px;
+  top: -54px;
 }
 .headerf .btn-social {
   position: relative;
@@ -588,7 +588,9 @@
 .proyectos-background .project-img {
   display: flex;
   width: 650px;
+  height: 350px;
   border-radius: 25px;
+  object-fit: cover;
 }
 .proyectos-background .title-project {
   font-family: "montserrat-bold";
@@ -597,7 +599,7 @@
 .proyectos-background .text-project {
   font-family: "montserrat-regular";
   font-size: 16px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   width: 650px;
 }
 .proyectos-background .btn-project {
@@ -887,9 +889,12 @@
 .proyectos-background .proyectos-containerm {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 50px;
 }
 .proyectos-background .proyectos-titlem {
+  display: flex;
   font-family: "montserrat-bold";
   font-size: 40px;
   width: 900px;
@@ -900,7 +905,7 @@
   font-family: "montserrat-medium";
   font-size: 20px;
   margin-bottom: 25px;
-  width: 660px;
+  width: 900px;
 }
 .proyectos-background .proyect1m, .proyectos-background .proyect2m, .proyectos-background .proyect3m {
   display: flex;
@@ -929,7 +934,6 @@
 .proyectos-background .text-project {
   font-family: "montserrat-regular";
   font-size: 16px;
-  padding-bottom: 80px;
   width: 650px;
 }
 .proyectos-background .btn-project {
@@ -1158,12 +1162,13 @@
 .proyectos-background .proyectos-containerd {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 50px;
 }
 .proyectos-background .proyectos-titled {
   font-family: "montserrat-bold";
   font-size: 40px;
-  width: 900px;
   margin-top: 25px;
   margin-bottom: 0px;
 }
@@ -1171,7 +1176,7 @@
   font-family: "montserrat-medium";
   font-size: 20px;
   margin-bottom: 25px;
-  width: 660px;
+  width: 550px;
 }
 .proyectos-background .proyect1d, .proyectos-background .proyect2d, .proyectos-background .proyect3d {
   display: flex;
@@ -1200,7 +1205,6 @@
 .proyectos-background .text-project {
   font-family: "montserrat-regular";
   font-size: 16px;
-  padding-bottom: 80px;
   width: 650px;
 }
 .proyectos-background .btn-project {
@@ -1759,7 +1763,7 @@
   justify-content: center;
   font-family: "montserrat-medium";
   font-size: 20px;
-  padding: 0% 20% 0% 23%;
+  padding: 0% 20% 0% 22%;
   margin-bottom: 100px;
 }
 

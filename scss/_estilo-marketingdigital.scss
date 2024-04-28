@@ -90,9 +90,12 @@
     .proyectos-containerm{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding-bottom: 50px;
     }
         .proyectos-titlem{
+            display: flex;
             font-family: $bold;
             font-size: 40px;
             width: 900px;
@@ -103,7 +106,7 @@
             font-family: $medium;
             font-size: 20px;
             margin-bottom: 25px;
-            width: 660px;
+            width: 900px;
         }
     .proyect1m, .proyect2m, .proyect3m{
         display: flex;
@@ -132,7 +135,6 @@
             .text-project{
                 font-family: $regular;
                 font-size: 16px;
-                padding-bottom: 80px;
                 width: 650px;
             }
             .btn-project{

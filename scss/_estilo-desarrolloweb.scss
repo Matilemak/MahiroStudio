@@ -93,12 +93,13 @@
     .proyectos-containerd{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding-bottom: 50px;
     }
         .proyectos-titled{
             font-family: $bold;
             font-size: 40px;
-            width: 900px;
             margin-top: 25px;
             margin-bottom: 0px;
         }
@@ -106,7 +107,7 @@
             font-family: $medium;
             font-size: 20px;
             margin-bottom: 25px;
-            width: 660px;
+            width: 550px;
         }
     .proyect1d, .proyect2d, .proyect3d{
         display: flex;
@@ -135,7 +136,6 @@
             .text-project{
                 font-family: $regular;
                 font-size: 16px;
-                padding-bottom: 80px;
                 width: 650px;
             }
             .btn-project{
