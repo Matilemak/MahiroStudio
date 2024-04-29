@@ -1605,8 +1605,9 @@
 }
 
 .cv {
-  margin-right: 20px;
-  margin-top: 10px;
+  text-decoration: none;
+  outline: none;
+  margin-right: 30px;
 }
 
 .span {
@@ -1918,6 +1919,7 @@
   padding: 10px;
   font-family: "montserrat-semibold";
   font-size: 16px;
+  width: 150px;
   height: 36px;
   border-radius: 10px;
   color: #f3f3f3;
