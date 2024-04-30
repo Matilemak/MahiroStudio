@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "montserrat-bold";
   src: url("../assets/font/Montserrat-Bold.ttf");
@@ -100,6 +101,7 @@
   transform: var(--transform);
 }
 
+/* - dispositivos ancho máximo 1240px - */
 .headerf {
   display: flex;
   flex-direction: column;
@@ -1846,7 +1848,6 @@
   color: #1b1b1d;
 }
 
-/* - animaciones objetos - */
 @font-face {
   font-family: "montserrat-bold";
   src: url("../assets/font/Montserrat-Bold.ttf");
