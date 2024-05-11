@@ -191,31 +191,30 @@
 .menu-icon{
     display: none;
 }
+.menu-input {
+  display: none;
+}
 
 /* - dispositivos ancho máximo 1240px - */
 
 @media only screen and (max-width: 1240px) {
     
+/* - responsive home - */
     .menu-icon {
         display: flex;
         flex-direction: column;
-        z-index: 1;
         width: 30px;
         height: 28px;
         border-radius: 10px;
         background: $negro-var;
         padding: 10px;
         gap: 6px;
-        cursor: pointer;
+        cursor: auto;
+        z-index: 2;
     }
-    
-    .menu-icon input {
-        position: absolute;
-        opacity: 0;
-        width: 0;
-        height: 0
+    .menu-input {
+        display: none;
     }
-    
     .menu-icon span {
         display: flex;
         height: 6px;
@@ -226,35 +225,45 @@
         transition: 0.3s ease-in-out;
         transform-origin: left center;
     }
-    
     .menu-icon input:checked ~ span {
         background: $rojo;
     }
-    
     .menu-icon input:checked ~ span:nth-of-type(1) {
         transform: rotate(45deg);
     }
-    
     .menu-icon input:checked ~ span:nth-of-type(2) {
         opacity: 0;
     }
-    
     .menu-icon input:checked ~ span:nth-of-type(3) {
         transform: rotate(-45deg);
     }
-    
+    .menu-input:checked + .menu-icon span:nth-child(1) {
+      transform: rotate(45deg);
+      background: $rojo;
+    }
+    .menu-input:checked + .menu-icon span:nth-child(2) {
+      transform: scaleX(0);
+    }
+    .menu-input:checked + .menu-icon span:nth-child(3) {
+      transform: rotate(-45deg);
+      background: $rojo;
+    }
     .navlinks-mobile{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        align-items: flex-end;
+        gap: 40px;
         position: fixed;
-        top: 0;
-        right: -250px; 
+        margin-top: 0px;
+        padding-top: 160px;
+        padding-right: 44px;
+        list-style-type: none;
+        top: 0px;
+        right: -290px; 
         background-color: $negro-var;
         width: 200px;
         height: 100vh;
-        z-index: 1000;
+        z-index: 1;
         transition: right 0.3s ease;
     }
     

@@ -253,19 +253,54 @@
     cursor: pointer;
     width: 465px;
 }
-
 .btn-endf:active {
     color: $rojo;
     box-shadow: 0 0.2rem #000000;
     transform: translateY(0.2rem);
 }
-
 .btn-endf:hover:not(:disabled) {
     background: #1b1b1d;
     color: $rojo;
 }
-
 .btn-endf:disabled {
     cursor: auto;
     color: #1b1b1d;
+}
+.header-mobile{
+    display: none;
+}
+
+/* - dispositivos ancho máximo 1240px - */
+
+@media only screen and (max-width: 1240px) {
+    
+    /* - responsive fotografia - */
+    .img-headerf{
+        display: none;
+    }
+    .header-textf1{
+        display: none;
+    }
+    .background-headerf{
+        display: none;
+    }
+    .header-textf2{
+        display: none;
+    }
+    .header-mobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-text{
+        width: 90%;
+        font-family: $bold;
+        font-size: 32px;
+        color: $negro-var;
+        text-align: right;
+    }
+    .header-img{
+        width: 100%;
+    }
 }

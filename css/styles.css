@@ -371,6 +371,42 @@
   color: #1b1b1d;
 }
 
+.header-mobile {
+  display: none;
+}
+
+/* - dispositivos ancho máximo 1240px - */
+@media only screen and (max-width: 1240px) {
+  /* - responsive fotografia - */
+  .img-headerf {
+    display: none;
+  }
+  .header-textf1 {
+    display: none;
+  }
+  .background-headerf {
+    display: none;
+  }
+  .header-textf2 {
+    display: none;
+  }
+  .header-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-text {
+    width: 90%;
+    font-family: "montserrat-bold";
+    font-size: 32px;
+    color: #1b1b1d;
+    text-align: right;
+  }
+  .header-img {
+    width: 100%;
+  }
+}
 .headerp {
   display: flex;
   flex-direction: column;
@@ -2035,25 +2071,27 @@
   display: none;
 }
 
+.menu-input {
+  display: none;
+}
+
 /* - dispositivos ancho máximo 1240px - */
 @media only screen and (max-width: 1240px) {
+  /* - responsive home - */
   .menu-icon {
     display: flex;
     flex-direction: column;
-    z-index: 1;
     width: 30px;
     height: 28px;
     border-radius: 10px;
     background: #1b1b1d;
     padding: 10px;
     gap: 6px;
-    cursor: pointer;
+    cursor: auto;
+    z-index: 2;
   }
-  .menu-icon input {
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
+  .menu-input {
+    display: none;
   }
   .menu-icon span {
     display: flex;
@@ -2077,18 +2115,33 @@
   .menu-icon input:checked ~ span:nth-of-type(3) {
     transform: rotate(-45deg);
   }
+  .menu-input:checked + .menu-icon span:nth-child(1) {
+    transform: rotate(45deg);
+    background: #F68E94;
+  }
+  .menu-input:checked + .menu-icon span:nth-child(2) {
+    transform: scaleX(0);
+  }
+  .menu-input:checked + .menu-icon span:nth-child(3) {
+    transform: rotate(-45deg);
+    background: #F68E94;
+  }
   .navlinks-mobile {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    align-items: flex-end;
+    gap: 40px;
     position: fixed;
-    top: 0;
-    right: -250px;
+    margin-top: 0px;
+    padding-top: 160px;
+    padding-right: 44px;
+    list-style-type: none;
+    top: 0px;
+    right: -290px;
     background-color: #1b1b1d;
     width: 200px;
     height: 100vh;
-    z-index: 1000;
+    z-index: 1;
     transition: right 0.3s ease;
   }
   #menu-icon:checked ~ .navlinks-mobile {
