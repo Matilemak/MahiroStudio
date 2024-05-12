@@ -303,4 +303,122 @@
     .header-img{
         width: 100%;
     }
-}
+    .background-ctaf{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $negro-var;
+        color: $blanco-var;
+        border-radius: 25px;
+        gap: 25px;
+        margin-bottom: 50px;
+        height: 345px;
+        margin-left: 44px;
+        margin-right: 44px;
+        }
+        .background-ctaf:hover::before {
+            display: none;
+        }
+        .background-ctaf:hover::after {
+            display: none;
+        }
+            .ctaf-title{
+                display: flex;
+                justify-content: center;
+                font-family: $bold;
+                font-size: 20px;
+                text-align: center;
+                width: 85%;
+                margin: 0px;
+                z-index: 1;
+            }
+            .ctaf-text{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: $medium;
+                font-size: 14px;
+                width: 85%;
+                margin: 0px;
+                z-index: 1;
+            }
+            .btn-ctaf{
+                font-family: $semibold;
+                font-size: 14px;
+                background-color: $rojo;
+                color: $blanco-var;
+                border: none;
+                padding: 10px;
+                width: 350px;
+                height: 50px;
+                border-radius: 10px;
+                box-shadow: none;
+            }
+            .btn-ctaf:active {
+                box-shadow: none;
+                transform: none;
+            }
+            
+            .btn-ctaf:hover:not(:disabled) {
+                color: $blanco-var;
+            }
+            
+            .btn-ctaf:disabled {
+                color: $blanco-var;
+            }
+            .gallery {
+                display: grid;
+                gap: 0px;
+                grid-template-columns: 90%;
+                grid-template-rows: repeat(12, auto);
+                grid-template-areas: 
+                    "gallery-img1",
+                    "gallery-img1",
+                    "gallery-img2",
+                    "gallery-img1",
+                    "gallery-img1",
+                    "gallery-img2",
+                    "gallery-img2",
+                    "gallery-img2",
+                    "gallery-img1",
+                    "gallery-img2",
+                    "gallery-img2",
+                    "gallery-img1";
+                margin-bottom: 20px;
+                width: auto;
+                height: auto;
+                margin-right: 0px;
+                overflow: hidden;
+            }
+            .gallery-img1 {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 25px;
+                margin-bottom: 20px;
+                grid-area: gallery-img1;
+            }
+            .gallery-img2 {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 25px;
+                margin-bottom: 20px;
+                grid-area: gallery-img2;
+            }
+            .gallery-img3 {
+                display: none;
+            }
+            .gallery-img4 {
+                display: none;
+            }
+        .alinksl{
+            display: none;
+        }
+        .arrow-headerf{
+            position: relative;
+            left: 50%;
+            right: 50%;
+        }
+    }

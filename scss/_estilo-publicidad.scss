@@ -420,3 +420,251 @@
     cursor: auto;
     color: #1b1b1d;
 }
+
+/* - dispositivos ancho máximo 1240px - */
+
+@media only screen and (max-width: 1240px) {
+    
+    /* - responsive publicidad - */
+    .headerp{
+        margin-top: 30px;
+        margin-bottom: 0px;
+    .img-ctap{
+        display: none;
+    }
+    .header-textp1{
+        display: none;
+    }
+    .background-headerp{
+        display: none;
+    }
+    .header-textp2{
+        display: none;
+    }
+    .header-mobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-textp{
+        width: 90%;
+        font-family: $bold;
+        font-size: 32px;
+        color: $negro-var;
+        text-align: right;
+    }
+    .header-imgp{
+        width: 100%;
+    }
+    .background-ctap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $negro-var;
+        color: $blanco-var;
+        border-radius: 25px;
+        gap: 25px;
+        margin-bottom: 50px;
+        height: 345px;
+        margin-left: 44px;
+        margin-right: 44px;
+        }
+        .background-ctap:hover::before {
+            display: none;
+        }
+        .background-ctap:hover::after {
+            display: none;
+        }
+            .ctap-title{
+                display: flex;
+                justify-content: center;
+                font-family: $bold;
+                font-size: 20px;
+                text-align: center;
+                width: 85%;
+                margin: 0px;
+                z-index: 1;
+            }
+            .ctap-text{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: $medium;
+                font-size: 14px;
+                width: 85%;
+                margin: 0px;
+                z-index: 1;
+            }
+            .btn-ctap{
+                font-family: $semibold;
+                font-size: 14px;
+                background-color: $rojo;
+                color: $blanco-var;
+                border: none;
+                padding: 10px;
+                width: 350px;
+                height: 50px;
+                border-radius: 10px;
+                box-shadow: none;
+            }
+            .btn-ctap:active {
+                box-shadow: none;
+                transform: none;
+            }
+            
+            .btn-ctap:hover:not(:disabled) {
+                color: $blanco-var;
+            }
+            
+            .btn-ctap:disabled {
+                color: $blanco-var;
+            }
+            .div-downp{
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    .background-ctap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $negro-var;
+        color: $blanco-var;
+        border-radius: 25px;
+        gap: 25px;
+        margin-bottom: 50px;
+        height: 345px;
+        margin-left: 44px;
+        margin-right: 44px;
+        }
+        .background-ctap:hover::before {
+            display: none;
+        }
+        .background-ctap:hover::after {
+            display: none;
+        }
+            .ctap-title{
+                display: flex;
+                justify-content: center;
+                font-family: $bold;
+                font-size: 20px;
+                text-align: center;
+                width: 85%;
+                margin: 0px;
+                z-index: 1;
+            }
+            .ctap-text{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: $medium;
+                font-size: 14px;
+                width: 85%;
+                margin: 0px;
+                z-index: 1;
+            }
+            .btn-ctap{
+                font-family: $semibold;
+                font-size: 14px;
+                background-color: $rojo;
+                color: $blanco-var;
+                border: none;
+                padding: 10px;
+                width: 350px;
+                height: 50px;
+                border-radius: 10px;
+                box-shadow: none;
+            }
+            .btn-ctap:active {
+                box-shadow: none;
+                transform: none;
+            }
+            
+            .btn-ctap:hover:not(:disabled) {
+                color: $blanco-var;
+            }
+            
+            .btn-ctap:disabled {
+                color: $blanco-var;
+            }
+
+            .proyectos-background{
+                background-color: $blanco-var;
+                .proyectos{
+                    padding-top: 50px;
+                    padding-bottom: 100px;
+                    margin-left: 44px;
+                    margin-right: 44px;
+                }
+                .proyectos-container{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-bottom: 50px;
+                }
+                    .proyectos-title{
+                        font-family: $bold;
+                        font-size: 20px;
+                    }
+                    .proyectos-text{
+                        display: none;
+                    }
+                .proyect1, .proyect2, .proyect3{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $negro-var;
+                    box-shadow: none;
+                    border-radius: 50px;
+                    color: $blanco-var;
+                    gap: 45px;
+                    padding: 45px;
+                    margin-bottom: 30px;
+                }
+                    .project-img{
+                        display: flex;
+                        width: 100%;
+                        height: 350px;
+                        border-radius: 25px;
+                        object-fit: cover;
+                    }
+                        .title-project{
+                            font-family: $bold;
+                            font-size: 20px;
+                            width: auto;
+                        }
+                        .text-project{
+                            font-family: $regular;
+                            font-size: 14px;
+                            padding-bottom: 40px;
+                            width: auto;
+                        }
+                        .btn-project{
+                            font-family: $semibold;
+                            font-size: 14px;
+                            background-color: $rojo;
+                            color: $blanco-var;
+                            border: none;
+                            padding: 10px;
+                            width: 350px;
+                            height: 50px;
+                            border-radius: 10px;
+                            box-shadow: none;
+                        }
+                        .btn-project:active {
+                            box-shadow: none;
+                            transform: none;
+                        }
+                        .btn-project:hover:not(:disabled) {
+                            color: $blanco-var;
+                        }
+                        .btn-project:disabled {
+                            color: $blanco-var;
+                        }
+            }
