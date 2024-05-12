@@ -29,15 +29,16 @@
         margin: 0px;
     }
     .contact-img{
-        width: 28%;
+      margin-top: 10%;
+      width: 28%;
     }
 }
 .form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #f3f3f3;
-    color: #1b1b1d;
+    background-color: $blanco-var;
+    color: $negro-var;
     padding-top: 15%;
     padding-bottom: 15%;
     width: 50%;
@@ -45,28 +46,28 @@
     border-bottom-right-radius: 30px;
   }
   .form .form-title {
-    font-family: "montserrat-bold";
+    font-family: $bold;
     font-size: 40px;
     margin-left: 25%;
     margin-top: 15px;
     margin-bottom: 25px;
   }
   .form .form-text {
-    font-family: "montserrat-medium";
+    font-family: $medium;
     font-size: 20px;
     margin-left: 25%;
     margin-top: 15px;
     margin-bottom: 15px;
   }
   .form .form-text {
-    font-family: "montserrat-medium";
+    font-family: $medium;
     font-size: 16px;
     margin-left: 25%;
     margin-top: 15px;
     margin-bottom: 15px;
   }
   .form .form-input {
-    font-family: "montserrat-medium";
+    font-family: $medium;
     font-size: 16px;
     width: 450px;
     height: 32px;
@@ -75,13 +76,13 @@
     outline: none;
   }
   .form .form-input:hover {
-    box-shadow: 0 0 0 0.1rem #F68E94;
+    box-shadow: 0 0 0 0.1rem $bold;
   }
   .form .form-input:focus {
-    box-shadow: 0 0 0 0.2rem #F68E94;
+    box-shadow: 0 0 0 0.2rem $bold;
   }
   .form .form-inputm {
-    font-family: "montserrat-medium";
+    font-family: $medium;
     font-size: 16px;
     width: 450px;
     height: 100px;
@@ -92,10 +93,10 @@
     outline: none;
   }
   .form .form-inputm:hover {
-    box-shadow: 0 0 0 0.15rem #F68E94;
+    box-shadow: 0 0 0 0.15rem $bold;
   }
   .form .form-inputm:focus {
-    box-shadow: 0 0 0 0.3rem #F68E94;
+    box-shadow: 0 0 0 0.3rem $bold;
   }
   .form .btn {
     display: flex;
