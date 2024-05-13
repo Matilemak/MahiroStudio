@@ -49,31 +49,43 @@
                 dejalo en buenas manos :)</p>
             <img class="contact-img animation-1" src="../assets/img/cohete.png">
         </div>
-        <form class="form">
+        <form action="" method="post" class="form">
             <div class="container-right">
                 <h2 class="form-title">Conversemos</h2>
                 <div>
                     <p class="form-text">Nombre</p>
-                    <input type="text" class="form-input">
+                    <input id="nombre" type="text" name="nombre" class="form-input" required>
                 </div>
                 <div>
                     <p class="form-text">Apellido</p>
-                    <input type="text" class="form-input">
+                    <input id="apellido" type="text" name="apellido" class="form-input" required>
                 </div>
                 <div>
                     <p class="form-text">Email</p>
-                    <input type="email" class="form-input">
+                    <input id="email" type="email" name="email" class="form-input" required>
                 </div>
                 <div>
                     <p class="form-text">Mensaje</p>
-                    <textarea class="form-inputm"  placeholder="Cuentame en que te puedo ayudar..."></textarea>
+                    <textarea id="mensaje" class="form-inputm" name="mensaje"  placeholder="Cuentame en que te puedo ayudar..." required></textarea>
                 </div>
                 <div class="btn">
-                    <button type="submit" class="btn-contact send">Enviar</button>
+                    <button type="submit" id="btn-enviar" class="btn-contact send">Enviar</button>
                     <button type="reset" class="btn-contact erase">Borrar</button>
                 </div>
             </div>
         </form>
+            <div id="popup" class="popup">
+                <div class="popup-container">
+                    <img src="../assets/img/megaphone.png" class="popup-img">
+                    <p>¡Mensaje enviado con éxito!</p>
+                </div>
+            </div>
+            <div id="popup-alerta" class="popup-alerta">
+                <div class="popup-container">
+                    <img src="../assets/img/megaphone.png" class="popup-img">
+                    <p>Por favor complete todos los campos del formulario.</p>
+                </div>
+            </div>
     </main>
 
 <footer class="footer">
@@ -108,5 +120,6 @@
     </div>
 </footer>
 
+    <script src="../javascript/main.js"></script>
 </body>
 </html>
