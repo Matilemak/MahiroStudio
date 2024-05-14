@@ -23,6 +23,7 @@
 
 .body{
     margin: 0px;
+    background-color: #fbfbfb;
 }
 
 .alinks{
@@ -375,7 +376,7 @@
         text-decoration: none;
     }
     .footer-text:hover{
-        color: none;
+        color: $blanco-var;
     }
     .social-media {
         display: none;
@@ -391,7 +392,7 @@
         padding-top: 90px;
     }
     .title-home {
-        width: 460px;
+        width: 90%;
         margin-bottom: 15px;
         font-family: $bold;
         font-size: 32px;
@@ -404,7 +405,7 @@
         margin: 0px;
         font-family: $medium;
         font-size: 14px;
-        width: 360px;
+        width: 90%;
     }
     .icons-header{
         display: none;
@@ -470,7 +471,6 @@
         padding-bottom: 100px;
         margin-bottom: 100px;
       }
-      
       .services-title {
         display: flex;
         justify-content: center;
@@ -480,63 +480,60 @@
         font-size: 20px;
         margin-bottom: 50px;
       }
-      
       .card {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         border-radius: 25px;
+        margin-bottom: 60px;
+        width: auto;
         perspective: none;
       }
-      
       .card-inner {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: auto;
         border-radius: none;
-        position: none;
+        position: relative;
         transform-style: none;
         transition: none;
       }
-      
       .card:hover .card-inner {
         transform: none;
       }
-      
       .card-front,
       .card-back {
         display: none;
       }
-      
       .card-front {
         display: flex;
         align-items: center;
-        justify-content: evenly;
+        justify-content: center;
         background-color: #1b1b1d;
-        width: 69%;
-        height: 290px;
+        padding: 30px 20px 20px 20px;
+        margin-top: 100px;
+        max-width: 100%;
+        min-width: 280px;
+        height: 340px;
         transform: none;
       }
-      
       .card-back {
         display: none;
       }
-      
       .checkmark {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         padding-bottom: 5px;
       }
-      
       .checkmark-icon {
         padding-left: 0px;
         padding-top: 2px;
         width: 14px;
         height: 14px;
       }
-      
       .card-title {
         font-family: $semibold;
         font-size: 20px;
@@ -545,18 +542,15 @@
         padding-left: 0px;
         padding-bottom: 25px;
       }
-      
       .ul {
         padding: 0px;
       }
-      
       .card-text {
         font-family: $regular;
         font-size: 14px;
         margin: 0px 0px 10px 0px;
         padding-left: 10px;
       }
-      
       .card-up {
         display: flex;
         flex-direction: column;
@@ -564,32 +558,28 @@
         gap: 0px;
         margin-bottom: 0px;
       }
-      
       .card-down {
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 0px;
       }
-      
       .card-left {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        position: relative;
         padding: 20px;
       }
-      
       .card-right {
         display: flex;
         align-items: center;
         padding-left: 0px;
       }
-      
       .icon-card {
         width: 120px;
         height: 120px;
       }
-      
       .icon-card2 {
         width: 150px;
         height: 150px;
@@ -602,7 +592,6 @@
         font-size: 20px;
         padding-bottom: 50px;
       }
-      
       .cert-text {
         display: flex;
         justify-content: center;
@@ -612,7 +601,6 @@
         padding: 0% 8% 0% 10%;
         margin-bottom: 50px;
       }
-      
       .certs1, .certs2 {
         display: flex;
         flex-direction: column;
@@ -623,14 +611,12 @@
         font-size: 14px;
         margin-bottom: 100px;
       }
-      
       .icon-cert {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 31px;
       }
-      
       .icon-text {
         display: flex;
         justify-content: center;
@@ -646,7 +632,6 @@
         height: 500px;
         background-color: #A88ECA;
       }
-      
       .cta-text {
         display: flex;
         justify-content: center;
@@ -657,7 +642,6 @@
         color: #f3f3f3;
         letter-spacing: 2px;
       }
-      
       .btn-end {
         display: flex;
         justify-content: center;
@@ -673,18 +657,15 @@
         border-radius: 10px;
         box-shadow: none;
       }
-      
       .btn-end:active {
         color: white;
         box-shadow: none;
         transform: none;
       }
-      
       .btn-end:hover:not(:disabled) {
         background: #1b1b1d;
         color: white;
       }
-      
       .btn-end:disabled {
         display: none;
     }
@@ -706,7 +687,7 @@
   }
   .header-mobile{
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
   }
@@ -715,10 +696,10 @@
       font-family: $bold;
       font-size: 32px;
       color: $negro-var;
-      text-align: right;
+      text-align: center;
   }
   .header-imgp{
-      width: 100%;
+        width: 100%;
   }
   .background-ctap{
       display: flex;
@@ -754,6 +735,7 @@
               display: flex;
               justify-content: center;
               align-items: center;
+              text-align: center;
               font-family: $medium;
               font-size: 14px;
               width: 85%;
@@ -824,10 +806,16 @@
               justify-content: center;
               align-items: center;
               font-family: $medium;
+              text-align: center;
               font-size: 14px;
               width: 85%;
               margin: 0px;
               z-index: 1;
+          }
+          .alinks{
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
           .btn-ctap{
               font-family: $semibold;
@@ -836,7 +824,8 @@
               color: $blanco-var;
               border: none;
               padding: 10px;
-              width: 320px;
+              margin-right: 0px;
+              width: 100%;
               height: 50px;
               border-radius: 10px;
               box-shadow: none;
@@ -845,11 +834,9 @@
               box-shadow: none;
               transform: none;
           }
-          
           .btn-ctap:hover:not(:disabled) {
               color: $blanco-var;
           }
-          
           .btn-ctap:disabled {
               color: $blanco-var;
           }
@@ -868,6 +855,7 @@
                   padding-bottom: 50px;
               }
                   .proyectos-title{
+                    text-align: center;
                       font-family: $bold;
                       font-size: 20px;
                   }
@@ -884,7 +872,7 @@
                   border-radius: 25px;
                   color: $blanco-var;
                   gap: 30px;
-                  padding: 25px;
+                  padding: 20px;
                   margin-bottom: 30px;
               }
                   .project-img{
@@ -896,12 +884,18 @@
                   }
                       .title-project{
                           display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          text-align: center;
                           font-family: $bold;
                           font-size: 20px;
                           width: 100%;
                       }
                       .text-project{
                           display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          text-align: center;
                           font-family: $regular;
                           font-size: 14px;
                           padding-bottom: 40px;
@@ -914,7 +908,7 @@
                           color: $blanco-var;
                           border: none;
                           padding: 10px;
-                          width: 260px;
+                          width: 100%;
                           height: 50px;
                           border-radius: 10px;
                           box-shadow: none;
@@ -1080,9 +1074,9 @@
 .header-textm{
   width: 90%;
   font-family: $bold;
+  text-align: center;
   font-size: 32px;
   color: $negro-var;
-  text-align: right;
 }
 .header-imgm{
   width: 100%;
@@ -1138,41 +1132,6 @@
             border-radius: 15px;
             object-fit: cover;
         }
-            .title-project{
-                display: flex;
-                font-family: $bold;
-                font-size: 20px;
-                width: 100%;
-            }
-            .text-project{
-                display: flex;
-                font-family: $regular;
-                font-size: 14px;
-                padding-bottom: 40px;
-                width: 100%;
-            }
-            .btn-project{
-                font-family: $semibold;
-                font-size: 14px;
-                background-color: $rojo;
-                color: $blanco-var;
-                border: none;
-                padding: 10px;
-                width: 260px;
-                height: 50px;
-                border-radius: 10px;
-                box-shadow: none;
-            }
-            .btn-project:active {
-                box-shadow: none;
-                transform: none;
-            }
-            .btn-project:hover:not(:disabled) {
-                color: $blanco-var;
-            }
-            .btn-project:disabled {
-                color: $blanco-var;
-            }
 }
       .cards{
           background-color: $blanco-var;
@@ -1379,7 +1338,7 @@
       font-family: $bold;
       font-size: 32px;
       color: $negro-var;
-      text-align: right;
+      text-align: center;
     }
     .header-imgd{
       width: 100%;
@@ -1445,7 +1404,6 @@
             object-fit: cover;
         }
     }
-  
   .cta-textd{
       display: flex;
       justify-content: center;
@@ -1492,7 +1450,7 @@
   .contacto{
     display: flex;
     flex-direction: column;
-    margin: 50px 44px;
+    margin: 50px 20px;
     .container-left{
         display: flex;
         flex-direction: column;
@@ -1543,7 +1501,7 @@
   .form .form-title {
     font-family: $bold;
     font-size: 20px;
-    margin-left: 10%;
+    margin-left: 6%;
     margin-top: 15px;
     margin-bottom: 25px;
   }
@@ -1564,7 +1522,7 @@
   .form .form-input {
     font-family: $medium;
     font-size: 14px;
-    width: 100%;
+    width: auto;
     height: 32px;
     margin-left: 6%;
     border-radius: 20px;
@@ -1573,7 +1531,7 @@
   .form .form-inputm {
     font-family: $medium;
     font-size: 14px;
-    width: 100%;
+    width: auto;
     height: 100px;
     margin-left: 6%;
     margin-bottom: 25px;

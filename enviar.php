@@ -5,8 +5,8 @@ $apellido = $_POST['apellido'];
 $email = $_POST['email'];
 $mensaje = $_POST['mensaje'];
 
-$destinatario = "matias.alcayagac@gmail.com";
-$asunto = "Mensaje de Mahiro Studio"
+$destinatario = "contacto@mahirostudio.cl";
+$asunto = "Mensaje de web Mahiro Studio"
 
 $carta = "De: $nombre \n";
 $carta .= "De: $apellido \n";

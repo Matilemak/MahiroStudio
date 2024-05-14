@@ -13,12 +13,12 @@
         .header-textf1{
             font-family: $bold;
             font-size: 45px;
-            width: 350px;
+            width: 380px;
             height: 122px;
             text-align: right;
             position: relative;
-            top: 80px;
-            left: 296px;
+            top: 60px;
+            left: 21%;
         }
         .img-headerf{
             width: 36%;
@@ -26,23 +26,23 @@
             position: relative;
             transform: rotate(10deg);
             top: 0px;
-            left: -280px;
+            left: -19%;
         }
         .background-headerf{
             position: relative;
             top: 10px;
-            left: 200px;
+            left: 14%;
             width: 42%;
         }
         .header-textf2{
             font-family: $bold;
             font-size: 45px;
-            width: 241px;
+            width: 200px;
             height: 110px;
             text-align: left;
             position: relative;
             top: 145px;
-            left: -350px;
+            left: -24%;
         }
     .div-downf{
         display: flex;
@@ -174,7 +174,7 @@
 .gallery{
     display: grid;
     gap: 20px;
-    grid-template-columns: 38% 25% 38%;
+    grid-template-columns: 36% 25% 36%;
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas: 
     "gallery-img1 gallery-img3 gallery-img2",
@@ -187,7 +187,6 @@
     margin-left: 44px;
     margin-right: 44px;
     margin-bottom: 100px;
-    width: 1385px;
     height: 2785px;
     .gallery-img1{
         width: 100%;
@@ -289,7 +288,7 @@
     }
     .header-mobile{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -298,10 +297,11 @@
         font-family: $bold;
         font-size: 32px;
         color: $negro-var;
-        text-align: right;
+        text-align: center;
+        margin-bottom: 0px;
     }
     .header-img{
-        width: 100%;
+        width: 80%;
     }
     .background-ctaf{
         display: flex;
@@ -337,11 +337,17 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                text-align: center;
                 font-family: $medium;
                 font-size: 14px;
                 width: 85%;
                 margin: 0px;
                 z-index: 1;
+            }
+            .alinks{
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
             .btn-ctaf{
                 font-family: $semibold;
@@ -350,7 +356,7 @@
                 color: $blanco-var;
                 border: none;
                 padding: 10px;
-                width: 350px;
+                width: 100%;
                 height: 50px;
                 border-radius: 10px;
                 box-shadow: none;
@@ -418,7 +424,7 @@
         }
         .arrow-headerf{
             position: relative;
-            left: 50%;
+            left: 45%;
             right: 50%;
         }
         .cta-endf{
@@ -429,7 +435,6 @@
             height: 550px;
             background-color: #A88ECA;
         }
-        
         .cta-textf{
             display: flex;
             justify-content: center;
@@ -442,7 +447,6 @@
             letter-spacing: 2px;
             width: 100%;
         }
-        
         .btn-endf{
             display: flex;
             justify-content: center;

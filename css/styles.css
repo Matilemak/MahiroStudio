@@ -117,12 +117,12 @@
 .headerf .header-textf1 {
   font-family: "montserrat-bold";
   font-size: 45px;
-  width: 350px;
+  width: 380px;
   height: 122px;
   text-align: right;
   position: relative;
-  top: 80px;
-  left: 296px;
+  top: 60px;
+  left: 21%;
 }
 .headerf .img-headerf {
   width: 36%;
@@ -130,23 +130,23 @@
   position: relative;
   transform: rotate(10deg);
   top: 0px;
-  left: -280px;
+  left: -19%;
 }
 .headerf .background-headerf {
   position: relative;
   top: 10px;
-  left: 200px;
+  left: 14%;
   width: 42%;
 }
 .headerf .header-textf2 {
   font-family: "montserrat-bold";
   font-size: 45px;
-  width: 241px;
+  width: 200px;
   height: 110px;
   text-align: left;
   position: relative;
   top: 145px;
-  left: -350px;
+  left: -24%;
 }
 .headerf .div-downf {
   display: flex;
@@ -282,13 +282,12 @@
 .gallery {
   display: grid;
   gap: 20px;
-  grid-template-columns: 38% 25% 38%;
+  grid-template-columns: 36% 25% 36%;
   grid-template-rows: repeat(6, 1fr);
   grid-template-areas: "gallery-img1 gallery-img3 gallery-img2", "gallery-img1 gallery-img3 gallery-img2", "gallery-img2 gallery-img3 gallery-img1", "gallery-img1 gallery-img3 gallery-img2", "gallery-img1 gallery-img3 gallery-img2", "gallery-img2 gallery-img4 gallery-img1";
   margin-left: 44px;
   margin-right: 44px;
   margin-bottom: 100px;
-  width: 1385px;
   height: 2785px;
 }
 .gallery .gallery-img1 {
@@ -392,7 +391,7 @@
   }
   .header-mobile {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -401,10 +400,11 @@
     font-family: "montserrat-bold";
     font-size: 32px;
     color: #1b1b1d;
-    text-align: right;
+    text-align: center;
+    margin-bottom: 0px;
   }
   .header-img {
-    width: 100%;
+    width: 80%;
   }
   .background-ctaf {
     display: flex;
@@ -440,11 +440,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-family: "montserrat-medium";
     font-size: 14px;
     width: 85%;
     margin: 0px;
     z-index: 1;
+  }
+  .alinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .btn-ctaf {
     font-family: "montserrat-semibold";
@@ -453,7 +459,7 @@
     color: #f3f3f3;
     border: none;
     padding: 10px;
-    width: 350px;
+    width: 100%;
     height: 50px;
     border-radius: 10px;
     box-shadow: none;
@@ -507,7 +513,7 @@
   }
   .arrow-headerf {
     position: relative;
-    left: 50%;
+    left: 45%;
     right: 50%;
   }
   .cta-endf {
@@ -2109,6 +2115,7 @@
 }
 .body {
   margin: 0px;
+  background-color: #fbfbfb;
 }
 
 .alinks {
@@ -2459,7 +2466,7 @@
     text-decoration: none;
   }
   .footer-text:hover {
-    color: none;
+    color: #f3f3f3;
   }
   .social-media {
     display: none;
@@ -2475,7 +2482,7 @@
     padding-top: 90px;
   }
   .title-home {
-    width: 460px;
+    width: 90%;
     margin-bottom: 15px;
     font-family: "montserrat-bold";
     font-size: 32px;
@@ -2488,7 +2495,7 @@
     margin: 0px;
     font-family: "montserrat-medium";
     font-size: 14px;
-    width: 360px;
+    width: 90%;
   }
   .icons-header {
     display: none;
@@ -2569,14 +2576,17 @@
     justify-content: center;
     align-items: center;
     border-radius: 25px;
+    margin-bottom: 60px;
+    width: auto;
     perspective: none;
   }
   .card-inner {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: auto;
     border-radius: none;
-    position: none;
+    position: relative;
     transform-style: none;
     transition: none;
   }
@@ -2590,10 +2600,13 @@
   .card-front {
     display: flex;
     align-items: center;
-    justify-content: evenly;
+    justify-content: center;
     background-color: #1b1b1d;
-    width: 69%;
-    height: 290px;
+    padding: 30px 20px 20px 20px;
+    margin-top: 100px;
+    max-width: 100%;
+    min-width: 280px;
+    height: 340px;
     transform: none;
   }
   .card-back {
@@ -2645,6 +2658,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    position: relative;
     padding: 20px;
   }
   .card-right {
@@ -2764,7 +2778,7 @@
   }
   .headerp .header-mobile {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -2773,7 +2787,7 @@
     font-family: "montserrat-bold";
     font-size: 32px;
     color: #1b1b1d;
-    text-align: right;
+    text-align: center;
   }
   .headerp .header-imgp {
     width: 100%;
@@ -2812,6 +2826,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-family: "montserrat-medium";
     font-size: 14px;
     width: 85%;
@@ -2879,10 +2894,16 @@
     justify-content: center;
     align-items: center;
     font-family: "montserrat-medium";
+    text-align: center;
     font-size: 14px;
     width: 85%;
     margin: 0px;
     z-index: 1;
+  }
+  .alinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .btn-ctap {
     font-family: "montserrat-semibold";
@@ -2891,7 +2912,8 @@
     color: #f3f3f3;
     border: none;
     padding: 10px;
-    width: 320px;
+    margin-right: 0px;
+    width: 100%;
     height: 50px;
     border-radius: 10px;
     box-shadow: none;
@@ -2922,6 +2944,7 @@
     padding-bottom: 50px;
   }
   .proyectos-background .proyectos-title {
+    text-align: center;
     font-family: "montserrat-bold";
     font-size: 20px;
   }
@@ -2938,7 +2961,7 @@
     border-radius: 25px;
     color: #f3f3f3;
     gap: 30px;
-    padding: 25px;
+    padding: 20px;
     margin-bottom: 30px;
   }
   .proyectos-background .project-img {
@@ -2950,12 +2973,18 @@
   }
   .proyectos-background .title-project {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-family: "montserrat-bold";
     font-size: 20px;
     width: 100%;
   }
   .proyectos-background .text-project {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-family: "montserrat-regular";
     font-size: 14px;
     padding-bottom: 40px;
@@ -2968,7 +2997,7 @@
     color: #f3f3f3;
     border: none;
     padding: 10px;
-    width: 260px;
+    width: 100%;
     height: 50px;
     border-radius: 10px;
     box-shadow: none;
@@ -3130,9 +3159,9 @@
   .headerm .header-textm {
     width: 90%;
     font-family: "montserrat-bold";
+    text-align: center;
     font-size: 32px;
     color: #1b1b1d;
-    text-align: right;
   }
   .headerm .header-imgm {
     width: 100%;
@@ -3187,41 +3216,6 @@
     height: auto;
     border-radius: 15px;
     object-fit: cover;
-  }
-  .proyectos-background .title-project {
-    display: flex;
-    font-family: "montserrat-bold";
-    font-size: 20px;
-    width: 100%;
-  }
-  .proyectos-background .text-project {
-    display: flex;
-    font-family: "montserrat-regular";
-    font-size: 14px;
-    padding-bottom: 40px;
-    width: 100%;
-  }
-  .proyectos-background .btn-project {
-    font-family: "montserrat-semibold";
-    font-size: 14px;
-    background-color: #F68E94;
-    color: #f3f3f3;
-    border: none;
-    padding: 10px;
-    width: 260px;
-    height: 50px;
-    border-radius: 10px;
-    box-shadow: none;
-  }
-  .proyectos-background .btn-project:active {
-    box-shadow: none;
-    transform: none;
-  }
-  .proyectos-background .btn-project:hover:not(:disabled) {
-    color: #f3f3f3;
-  }
-  .proyectos-background .btn-project:disabled {
-    color: #f3f3f3;
   }
   .cards {
     background-color: #f3f3f3;
@@ -3426,7 +3420,7 @@
     font-family: "montserrat-bold";
     font-size: 32px;
     color: #1b1b1d;
-    text-align: right;
+    text-align: center;
   }
   .headerd .header-imgd {
     width: 100%;
@@ -3535,7 +3529,7 @@
   .contacto {
     display: flex;
     flex-direction: column;
-    margin: 50px 44px;
+    margin: 50px 20px;
   }
   .contacto .container-left {
     display: flex;
@@ -3586,7 +3580,7 @@
   .form .form-title {
     font-family: "montserrat-bold";
     font-size: 20px;
-    margin-left: 10%;
+    margin-left: 6%;
     margin-top: 15px;
     margin-bottom: 25px;
   }
@@ -3607,7 +3601,7 @@
   .form .form-input {
     font-family: "montserrat-medium";
     font-size: 14px;
-    width: 100%;
+    width: auto;
     height: 32px;
     margin-left: 6%;
     border-radius: 20px;
@@ -3616,7 +3610,7 @@
   .form .form-inputm {
     font-family: "montserrat-medium";
     font-size: 14px;
-    width: 100%;
+    width: auto;
     height: 100px;
     margin-left: 6%;
     margin-bottom: 25px;
