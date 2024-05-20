@@ -282,10 +282,14 @@
     
     .logo-home{
         width: 66px;
+        perspective: none;
         position: relative;
+        transform-style: none;
+        will-change: none;
+        transition: none;
     }
     .logo-home:hover{
-        display: none;
+        transform: none;
     }
     .nav-links {
         display: none;

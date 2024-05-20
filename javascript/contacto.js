@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(){
         let mensaje = document.getElementById("mensaje").value.trim();
 
         if (nombre === "" || apellido === "" || email === "" || mensaje === "") {
-            mostrarAlerta("Por favor complete todos los campos del formulario."); // Se pasa el mensaje a mostrarAlerta()
+            mostrarAlerta("Por favor complete todos los campos del formulario.");
             return false;
         }
         return true;
