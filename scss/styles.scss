@@ -195,6 +195,12 @@
 .menu-input {
   display: none;
 }
+.logo-homemobile{
+    display: none;
+}
+.logomobile{
+    display: none;
+}
 
 /* - dispositivos ancho máximo 1240px - */
 
@@ -279,17 +285,23 @@
         text-decoration: none;
         color: $blanco-var;
     }
-    
+    .logo{
+        display: none;
+    }
     .logo-home{
-        width: 66px;
-        perspective: none;
-        position: relative;
-        transform-style: none;
-        will-change: none;
-        transition: none;
+        display: none;
     }
     .logo-home:hover{
-        transform: none;
+        display: none;
+    }
+    .logomobile{
+        display:block;
+        width: 66px;
+    }
+    .logo-homemobile{
+        display:block;
+        width: 66px;
+        position: relative;
     }
     .nav-links {
         display: none;
