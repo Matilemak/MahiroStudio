@@ -11,7 +11,8 @@
         margin-bottom: 0px;
     }
         .header-textp1{
-            font-family: $bold;
+            font-family: $bold, sans-serif;
+            font-weight: 700;
             font-size: 50px;
             width: 334px;
             height: 122px;
@@ -33,7 +34,8 @@
             bottom: 3px;
         }
         .header-textp2{
-            font-family: $bold;
+            font-family: $bold, sans-serif;
+            font-weight: 700;
             font-size: 50px;
             width: 259px;
             height: 122px;
@@ -56,7 +58,8 @@
             height: 27px;
             text-align: center;
             font-size: 16px;
-            font-family: $regular;
+            font-family: $regular, sans-serif;
+            font-weight: 400;
             text-decoration: none;
             color: $negro-var;
             background: transparent;
@@ -122,29 +125,34 @@
         z-index: -1;
     }
         .ctap-title{
-            font-family: $bold;
+            display: flex;
+            font-family: $bold, sans-serif;
+            font-weight: 700;
             font-size: 35px;
             text-align: left;
-            width: 760px;
+            width: 680px;
             margin: 0px;
             z-index: 1;
         }
         .ctap-text{
-            font-family: $medium;
+            display: flex;
+            font-family: $medium, sans-serif;
+            font-weight: 500;
             font-size: 20px;
             text-align: left;
-            width: 760px;
+            width: 680px;
             margin: 0px;
             z-index: 1;
         }
         .btn-ctap{
-            font-family: $semibold;
+            font-family: $semibold, sans-serif;
+            font-weight: 600;
             font-size: 20px;
             background-color: $rojo;
             color: $blanco-var;
             border: none;
             padding: 10px;
-            width: 740px;
+            width: 660px;
             margin-right: 20px;
             height: 50px;
             border-radius: 10px;
@@ -187,11 +195,13 @@
         padding-bottom: 50px;
     }
         .proyectos-title{
-            font-family: $bold;
+            font-family: $bold, sans-serif;
+            font-weight: 700;
             font-size: 40px;
         }
         .proyectos-text{
-            font-family: $regular;
+            font-family: $regular, sans-serif;
+            font-weight: 400;
             font-size: 16px;
         }
     .proyect1, .proyect2, .proyect3{
@@ -200,11 +210,11 @@
         justify-content: center;
         align-items: center;
         background-color: $negro-var;
-        box-shadow: 0px 6px 10px $negro;
-        border-radius: 50px;
+        box-shadow: 0px 3px 8px grey;
+        border-radius: 25px;
         color: $blanco-var;
         gap: 45px;
-        padding: 45px;
+        padding: 25px;
         margin-bottom: 30px;
     }
         .project-img{
@@ -215,17 +225,20 @@
             object-fit: cover;
         }
             .title-project{
-                font-family: $bold;
+                font-family: $bold, sans-serif;
+                font-weight: 700;
                 font-size: 24px;
             }
             .text-project{
-                font-family: $regular;
+                font-family: $regular, sans-serif;
+                font-weight: 400;
                 font-size: 16px;
                 padding-bottom: 40px;
                 width: 650px;
             }
             .btn-project{
-                font-family: $semibold;
+                font-family: $semibold, sans-serif;
+                font-weight: 600;
                 font-size: 20px;
                 background-color: $blanco-var;
                 color: $negro-var;
@@ -261,7 +274,8 @@
         margin-right: 44px;
     }
     .title-service{
-        font-family: $bold;
+        font-family: $bold, sans-serif;
+        font-weight: 400;
         font-size: 40px;
         margin-top: 0px;
         margin-bottom: 100px;
@@ -287,7 +301,8 @@
         overflow: hidden;
     }
             .card-title{
-                font-family: $bold;
+                font-family: $bold, sans-serif;
+                font-weight: 700;
                 font-size: 24px;
                 margin: 0px;
                 padding-top: 20px;
@@ -296,7 +311,8 @@
                 z-index: 1;
             }
             .card-text{
-                font-family: $regular;
+                font-family: $regular, sans-serif;
+                font-weight: 400;
                 font-size: 16px;
                 margin: 0px;
                 padding: 0px;
@@ -379,7 +395,8 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    font-family: "montserrat-bold";
+    font-family: $bold, sans-serif;
+    font-weight: 700;
     margin-top: 0px;
     margin-bottom: 15px;
     font-size: 50px;
@@ -392,7 +409,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "montserrat-semibold";
+    font-family: $semibold, sans-serif;
+    font-weight: 600;
     font-size: 24px;
     background-color: #1b1b1d;
     color: #f3f3f3;

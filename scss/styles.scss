@@ -8,18 +8,6 @@
 @import "estilo-contacto";
 @import "estilo-home";
 
-@font-face{
-    font-family: "montserrat-bold";
-    src: url("../assets/font/Montserrat-Bold.ttf");
-    font-family: "montserrat-semibold";
-    src: url("../assets/font/Montserrat-SemiBold.ttf");
-    font-family: "montserrat-medium";
-    src: url("../assets/font/Montserrat-Regular.ttf");
-    font-family: "montserrat-regular";
-    src: url("../assets/font/Montserrat-Regular.ttf");
-    font-family: "montserrat-light";
-    src: url("../assets/font/Montserrat-Light.ttf");
-}
 
 .body{
     margin: 0px;
@@ -58,7 +46,8 @@
 .nav-links {
     display: flex;
     gap: 50px;
-    font-family: "montserrat-medium";
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
     font-size: 16px;
     color: #1b1b1d;
     list-style-type: none;
@@ -72,14 +61,15 @@
 }
   
   .nav-link:hover {
-    color: #F68E94;
+    color: #d6575d;
   }
   
   .btn-contact {
-    background-color: #F68E94;
+    background-color: #d6575d;
     border: none;
     padding: 10px;
-    font-family: "montserrat-semibold";
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
     font-size: 16px;
     width: 150px;
     height: 36px;
@@ -131,7 +121,9 @@
 
 .logo-text{
     display: flex;
-    font-family: "monstserrat-regular";
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
     font-size: 18px;
     padding-top: 21px;
     padding-left: 2px;
@@ -172,12 +164,16 @@
     margin-right: 44px;
 }
 .footer-title{
-    font-family: $semibold;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
     font-size: 20px;
     color: $blanco-var;
 }
 .footer-text{
-    font-family: "montserrat-medium";
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
     font-size: 16px;
     color: #f3f3f3;
     list-style-type: none;
@@ -279,7 +275,9 @@
     }
     
     .nav-linkmb {
-        font-family: $semibold;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        letter-spacing: 1px;
         font-size: 20px;
         list-style-type: none;
         text-decoration: none;
@@ -310,10 +308,11 @@
         display: none;
     }
     .btn-contact {
-        background-color: #F68E94;
+        background-color: #d6575d;
         border: none;
         padding: 10px;
-        font-family: $semibold;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
         font-size: 16px;
         width: 100%;
         margin-bottom: 30px;
@@ -380,12 +379,14 @@
         gap: 20px;
     }
     .footer-title{
-        font-family: $semibold;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
         font-size: 20px;
         color: $blanco-var;
     }
     .footer-text{
-        font-family: $medium;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
         font-size: 16px;
         color: $blanco-var;
         list-style-type: none;
@@ -410,7 +411,8 @@
     .title-home {
         width: 90%;
         margin-bottom: 15px;
-        font-family: $bold;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
         font-size: 32px;
     }
     .titletext-home {
@@ -419,7 +421,8 @@
         padding: 10px;
         color: $blanco-var;
         margin: 0px;
-        font-family: $medium;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
         font-size: 14px;
         width: 90%;
     }
@@ -459,14 +462,16 @@
         padding-bottom: 50px;
     }
     .titles-h2 {
-        font-family: $semibold;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
         font-size: 20px;
         margin-top: 0px;
         padding-bottom: 20px;
         text-align: center;
     }
     .about-text {
-        font-family: $medium;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
         font-size: 14px;
         margin-bottom: 30px;
         line-height: 20px;
@@ -482,7 +487,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #A88ECA;
+        background-color: #955fdd;
         color: #f3f3f3;
         padding-bottom: 100px;
         margin-bottom: 100px;
@@ -492,7 +497,8 @@
         justify-content: center;
         margin: 0px;
         padding-top: 65px;
-        font-family: $semibold;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
         font-size: 20px;
         margin-bottom: 50px;
       }
@@ -551,7 +557,8 @@
         height: 14px;
       }
       .card-title {
-        font-family: $semibold;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
         font-size: 20px;
         margin: 0px;
         padding-top: 10px;
@@ -562,7 +569,8 @@
         padding: 0px;
       }
       .card-text {
-        font-family: $regular;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
         font-size: 14px;
         margin: 0px 0px 10px 0px;
         padding-left: 10px;
@@ -604,14 +612,16 @@
       .title-cert {
         display: flex;
         justify-content: center;
-        font-family: $semibold;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
         font-size: 20px;
         padding-bottom: 50px;
       }
       .cert-text {
         display: flex;
         justify-content: center;
-        font-family: $medium;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
         font-size: 14px;
         text-align: center;
         padding: 0% 8% 0% 10%;
@@ -623,7 +633,8 @@
         justify-content: center;
         align-items: center;
         gap: 60px;
-        font-family: $medium;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
         font-size: 14px;
         margin-bottom: 100px;
       }
@@ -646,12 +657,13 @@
         align-items: center;
         flex-direction: column;
         height: 500px;
-        background-color: #A88ECA;
+        background-color: #955fdd;
       }
       .cta-text {
         display: flex;
         justify-content: center;
-        font-family: "montserrat-bold";
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
         margin-top: 0px;
         margin-bottom: 15px;
         font-size: 30px;
@@ -662,7 +674,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: $semibold;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
         font-size: 20px;
         background-color: #1b1b1d;
         color: #f3f3f3;
@@ -709,7 +722,8 @@
   }
   .header-textp{
       width: 90%;
-      font-family: $bold;
+      font-family: "Inter", sans-serif;
+      font-weight: 700;
       font-size: 32px;
       color: $negro-var;
       text-align: center;
@@ -740,7 +754,8 @@
           .ctap-title{
               display: flex;
               justify-content: center;
-              font-family: $bold;
+              font-family: "Inter", sans-serif;
+              font-weight: 700;
               font-size: 20px;
               text-align: center;
               width: 85%;
@@ -752,23 +767,25 @@
               justify-content: center;
               align-items: center;
               text-align: center;
-              font-family: $medium;
+              font-family: "Inter", sans-serif;
+              font-weight: 500;
               font-size: 14px;
               width: 85%;
               margin: 0px;
               z-index: 1;
           }
           .btn-ctap{
-              font-family: $semibold;
-              font-size: 14px;
-              background-color: $rojo;
-              color: $blanco-var;
-              border: none;
-              padding: 10px;
-              width: 350px;
-              height: 50px;
-              border-radius: 10px;
-              box-shadow: none;
+            font-family: "Inter", sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            background-color: $rojo;
+            color: $blanco-var;
+            border: none;
+            padding: 10px;
+            width: 350px;
+            height: 50px;
+            border-radius: 10px;
+            box-shadow: none;
           }
           .btn-ctap:active {
               box-shadow: none;
@@ -810,7 +827,8 @@
           .ctap-title{
               display: flex;
               justify-content: center;
-              font-family: $bold;
+              font-family: "Inter", sans-serif;
+              font-weight: 700;
               font-size: 20px;
               text-align: center;
               width: 85%;
@@ -821,7 +839,8 @@
               display: flex;
               justify-content: center;
               align-items: center;
-              font-family: $medium;
+              font-family: "Inter", sans-serif;
+              font-weight: 500;
               text-align: center;
               font-size: 14px;
               width: 85%;
@@ -834,7 +853,8 @@
             align-items: center;
           }
           .btn-ctap{
-              font-family: $semibold;
+            font-family: "Inter", sans-serif;
+            font-weight: 600;
               font-size: 14px;
               background-color: $rojo;
               color: $blanco-var;
@@ -872,8 +892,9 @@
               }
                   .proyectos-title{
                     text-align: center;
-                      font-family: $bold;
-                      font-size: 20px;
+                    font-family: "Inter", sans-serif;
+                    font-weight: 700;
+                    font-size: 20px;
                   }
                   .proyectos-text{
                       display: none;
@@ -903,7 +924,8 @@
                           justify-content: center;
                           align-items: center;
                           text-align: center;
-                          font-family: $bold;
+                          font-family: "Inter", sans-serif;
+                          font-weight: 700;
                           font-size: 20px;
                           width: 100%;
                       }
@@ -912,13 +934,15 @@
                           justify-content: center;
                           align-items: center;
                           text-align: center;
-                          font-family: $regular;
+                          font-family: "Inter", sans-serif;
+                          font-weight: 400;
                           font-size: 14px;
                           padding-bottom: 40px;
                           width: 100%;
                       }
                       .btn-project{
-                          font-family: $semibold;
+                        font-family: "Inter", sans-serif;
+                        font-weight: 600;
                           font-size: 14px;
                           background-color: $rojo;
                           color: $blanco-var;
@@ -950,7 +974,8 @@
               }
               .title-service{
                   text-align: center;
-                  font-family: $bold;
+                  font-family: "Inter", sans-serif;
+                  font-weight: 700;
                   font-size: 20px;
                   margin-top: 0px;
                   margin-bottom: 50px;
@@ -977,7 +1002,8 @@
                   overflow: hidden;
               }
                       .card-title{
-                          font-family: $bold;
+                        font-family: "Inter",  sans-serif;
+                        font-weight: 700;
                           font-size: 20px;
                           margin: 0px;
                           padding-top: 20px;
@@ -985,7 +1011,8 @@
                           width: 223px;
                       }
                       .card-text{
-                          font-family: $regular;
+                        font-family: "Inter", sans-serif;
+                        font-weight: 400;
                           font-size: 14px;
                           margin: 0px;
                           padding: 0px;
@@ -1032,7 +1059,8 @@
         .cta-textp{
             display: flex;
             justify-content: center;
-            font-family: $bold;
+            font-family: "Inter", sans-serif;
+            font-weight: 700;
             text-align: center;
             margin-top: 0px;
             margin-bottom: 15px;
@@ -1045,7 +1073,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: $semibold;
+            font-family: "Inter", sans-serif;
+            font-weight: 600;
             font-size: 14px;
             background-color: #1b1b1d;
             color: #f3f3f3;
@@ -1089,7 +1118,9 @@
 }
 .header-textm{
   width: 90%;
-  font-family: $bold;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
   text-align: center;
   font-size: 32px;
   color: $negro-var;
@@ -1121,7 +1152,8 @@
             text-align: center;
             justify-content: center;
             align-items: center;
-            font-family: $bold;
+            font-family: "Inter", sans-serif;
+            font-weight: 700;
             font-size: 20px;
             width: 100%;
         }
@@ -1158,7 +1190,9 @@
           }
           .title-service{
               text-align: center;
-              font-family: $bold;
+              font-family: "Inter", sans-serif;
+              font-weight: 700;
+              letter-spacing: 1px;
               font-size: 20px;
               margin-top: 0px;
               margin-bottom: 50px;
@@ -1185,7 +1219,8 @@
               overflow: hidden;
           }
                   .card-title{
-                      font-family: $bold;
+                    font-family: "Inter", sans-serif;
+                    font-weight: 700;
                       font-size: 20px;
                       margin: 0px;
                       padding-top: 20px;
@@ -1193,7 +1228,8 @@
                       width: 223px;
                   }
                   .card-text{
-                      font-family: $regular;
+                    font-family: "Inter", sans-serif;
+                    font-weight: 400;
                       font-size: 14px;
                       margin: 0px;
                       padding: 0px;
@@ -1240,7 +1276,8 @@
     .cta-textp{
         display: flex;
         justify-content: center;
-        font-family: $bold;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
         text-align: center;
         margin-top: 0px;
         margin-bottom: 15px;
@@ -1253,7 +1290,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: $semibold;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
         font-size: 14px;
         background-color: #1b1b1d;
         color: #f3f3f3;
@@ -1294,7 +1332,8 @@
     .cta-textm{
         display: flex;
         justify-content: center;
-        font-family: $bold;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
         text-align: center;
         margin-top: 0px;
         margin-bottom: 15px;
@@ -1307,7 +1346,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: $semibold;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        letter-spacing: 1px;
         font-size: 14px;
         background-color: #1b1b1d;
         color: #f3f3f3;
@@ -1351,7 +1392,8 @@
     }
     .header-textd{
       width: 90%;
-      font-family: $bold;
+      font-family: "Inter", sans-serif;
+      font-weight: 700;
       font-size: 32px;
       color: $negro-var;
       text-align: center;
@@ -1392,7 +1434,8 @@
             text-align: center;
             justify-content: center;
             align-items: center;
-            font-family: $bold;
+            font-family: "Inter", sans-serif;
+            font-weight: 700;
             font-size: 20px;
             width: 100%;
         }
@@ -1423,7 +1466,8 @@
   .cta-textd{
       display: flex;
       justify-content: center;
-      font-family: $bold;
+      font-family: "Inter", sans-serif;
+      font-weight: 700;
       text-align: center;
       margin-top: 0px;
       margin-bottom: 15px;
@@ -1436,7 +1480,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: $semibold;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
       font-size: 14px;
       background-color: #1b1b1d;
       color: #f3f3f3;
@@ -1483,14 +1528,16 @@
         width: 100%;
     }
     .contact-title{
-        font-family: $bold;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
         font-size: 20px;
         text-align: center;
         width: 100%;
         margin-bottom: 16px;
     }
     .contact-text{
-        font-family: $medium;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
         font-size: 14px;
         text-align: center;
         width: 100%;
@@ -1515,28 +1562,32 @@
     border-bottom-left-radius: 20px;
   }
   .form .form-title {
-    font-family: $bold;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
     font-size: 20px;
     margin-left: 6%;
     margin-top: 15px;
     margin-bottom: 25px;
   }
   .form .form-text {
-    font-family: $medium;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
     font-size: 16px;
     margin-left: 6%;
     margin-top: 15px;
     margin-bottom: 15px;
   }
   .form .form-text {
-    font-family: $medium;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
     font-size: 14px;
     margin-left: 6%;
     margin-top: 15px;
     margin-bottom: 15px;
   }
   .form .form-input {
-    font-family: $medium;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
     font-size: 14px;
     width: auto;
     height: 32px;
@@ -1545,7 +1596,8 @@
     outline: none;
   }
   .form .form-inputm {
-    font-family: $medium;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
     font-size: 14px;
     width: auto;
     height: 100px;

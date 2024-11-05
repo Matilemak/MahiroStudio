@@ -1,31 +1,7 @@
-@font-face {
-    font-family: "montserrat-bold";
-    src: url("../assets/font/Montserrat-Bold.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap');
 
-@font-face {
-    font-family: "montserrat-semibold";
-    src: url("../assets/font/Montserrat-SemiBold.ttf");
-}
-
-@font-face {
-    font-family: "montserrat-medium";
-    src: url("../assets/font/Montserrat-Regular.ttf");
-}
-
-@font-face {
-    font-family: "montserrat-regular";
-    src: url("../assets/font/Montserrat-Regular.ttf");
-}
-
-@font-face {
-    font-family: "montserrat-light";
-    src: url("../assets/font/Montserrat-Light.ttf");
-}
-
-
-$bold: "montserrat-bold";
-$semibold: "montserrat-semibold";
-$medium: "montserrat-medium";
-$regular: "montserrat-regular";
-$light: "montserrat-light";
+$bold: "Inter"; //700
+$semibold: "Inter"; //600
+$medium: "Inter"; //500
+$regular: "Inter"; //400
+$light: "Inter"; //300

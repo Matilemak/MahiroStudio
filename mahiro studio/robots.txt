@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /private/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /test/
+Disallow: /assets/docs/cv-matias-alcayaga-cabello.pdf
+Disallow: /contacto
+Allow: /fotografia
+Allow: /publicidad
+Allow: /marketing-digital
+Allow: /desarrollo-web
+
+sitemap: https://mahirostudio.cl/sitemap.xml

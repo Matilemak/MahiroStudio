@@ -24,16 +24,18 @@
   }
   
   .title-home {
-    width: 487px;
+    width: 480px;
     margin-bottom: 15px;
-    font-family: $bold;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
     font-size: 45px;
   }
   
   .titletext-home {
-    width: 366px;
+    width: 400px;
     margin: 0px;
-    font-family: "montserrat-medium";
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
     font-size: 16px;
   }
   
@@ -133,14 +135,16 @@
   }
   
   .titles-h2 {
-    font-family: "montserrat-bold";
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
     font-size: 40px;
     margin-top: 0px;
     padding-bottom: 20px;
   }
   
   .about-text {
-    font-family: "montserrat-medium";
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
     font-size: 16px;
     margin-bottom: 30px;
     line-height: 20px;
@@ -154,12 +158,12 @@
   }
   
   .span {
-    color: #F68E94;
+    color: $rojo;
   }
   
   /* - estilos servicios - */
   .services {
-    background-color: #A88ECA;
+    background-color: $morado;
     color: #f3f3f3;
     padding-bottom: 100px;
     margin-bottom: 100px;
@@ -170,7 +174,8 @@
     justify-content: center;
     margin: 0px;
     padding-top: 100px;
-    font-family: "montserrat-bold";
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
     font-size: 40px;
     margin-bottom: 100px;
   }
@@ -215,7 +220,7 @@
   }
   
   .card-back {
-    background-color: #F68E94;
+    background-color: $rojo;
     color: #f3f3f3;
     display: flex;
     align-items: center;
@@ -237,7 +242,8 @@
   }
   
   .card-title {
-    font-family: "monstserrat-semibold";
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
     font-size: 36px;
     margin: 0px;
     padding-top: 10px;
@@ -250,7 +256,8 @@
   }
   
   .card-text {
-    font-family: "monstserrat-regular";
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
     font-size: 20px;
     margin: 0px 0px 10px 0px;
     padding-left: 15px;
@@ -299,17 +306,28 @@
   .title-cert {
     display: flex;
     justify-content: center;
-    font-family: "montserrat-bold";
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
     font-size: 40px;
+    margin-bottom: 100px;
   }
   
+  .container-cert{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .cert-text {
     display: flex;
     justify-content: center;
-    font-family: "montserrat-medium";
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
     font-size: 20px;
     padding: 0% 20% 0% 22%;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
   
   .certs1, .certs2 {
@@ -318,14 +336,17 @@
     justify-content: center;
     align-items: flex-end;
     gap: 72px;
-    font-family: "montserrat-medium";
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
     font-size: 16px;
     margin-bottom: 100px;
   }
   
   .icon-cert {
     display: flex;
-    margin-bottom: 62px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
   }
   
   .icon-text {
@@ -342,13 +363,14 @@
     align-items: center;
     flex-direction: column;
     height: 550px;
-    background-color: #A88ECA;
+    background-color: $morado;
   }
   
   .cta-text {
     display: flex;
     justify-content: center;
-    font-family: "montserrat-bold";
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
     margin-top: 0px;
     margin-bottom: 15px;
     font-size: 50px;
@@ -360,7 +382,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "montserrat-semibold";
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
     font-size: 24px;
     background-color: #1b1b1d;
     color: #f3f3f3;
