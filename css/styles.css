@@ -85,8 +85,8 @@
 .headerf {
   display: flex;
   flex-direction: column;
-  margin-left: 44px;
-  margin-right: 44px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 25px;
 }
 .headerf .div-upf {
@@ -96,46 +96,50 @@
   margin-bottom: 0px;
 }
 .headerf .header-textf1 {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   font-size: 45px;
-  width: 380px;
+  width: 900px;
   height: 122px;
   text-align: right;
   position: relative;
-  top: 60px;
-  left: 21%;
+  bottom: -70px;
+  left: 22%;
 }
 .headerf .img-headerf {
-  width: 36%;
+  width: 100%;
   height: 36%;
   position: relative;
   transform: rotate(10deg);
   top: 0px;
-  left: -19%;
+  left: -21%;
 }
 .headerf .background-headerf {
   position: relative;
-  top: 10px;
   left: 14%;
-  width: 42%;
+  bottom: 30px;
+  width: 60%;
 }
 .headerf .header-textf2 {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   font-size: 45px;
   width: 200px;
   height: 110px;
   text-align: left;
   position: relative;
   top: 145px;
-  left: -24%;
+  left: -25%;
 }
 .headerf .div-downf {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   position: relative;
-  margin-top: 55px;
-  top: -54px;
+  bottom: 73px;
+  margin-top: 0px;
+  margin-left: 44px;
+  margin-right: 44px;
 }
 .headerf .btn-social {
   position: relative;
@@ -144,7 +148,8 @@
   height: 27px;
   text-align: center;
   font-size: 16px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
   text-decoration: none;
   color: #1b1b1d;
   background: transparent;
@@ -211,7 +216,8 @@
 }
 
 .ctaf-title {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   font-size: 35px;
   width: 675px;
   margin: 0px;
@@ -219,7 +225,8 @@
 }
 
 .ctaf-text {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
   font-size: 20px;
   width: 670px;
   margin: 0px;
@@ -227,7 +234,8 @@
 }
 
 .btn-ctaf {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
   font-size: 20px;
   background-color: #d6575d;
   color: #f3f3f3;
@@ -302,13 +310,16 @@
   align-items: center;
   flex-direction: column;
   height: 550px;
-  background-color: #A88ECA;
+  background-color: #955fdd;
 }
 
 .cta-textf {
   display: flex;
   justify-content: center;
-  font-family: "montserrat-bold";
+  align-items: center;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   margin-top: 0px;
   margin-bottom: 15px;
   font-size: 50px;
@@ -321,18 +332,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "montserrat-semibold";
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
   font-size: 24px;
   background-color: #1b1b1d;
   color: #f3f3f3;
   border: none;
-  padding: 10px;
-  width: 560px;
+  width: 410px;
   height: 50px;
   border-radius: 10px;
   box-shadow: 0 0.4rem #000000;
   cursor: pointer;
-  width: 465px;
 }
 
 .btn-endf:active {
@@ -378,7 +388,8 @@
   }
   .header-text {
     width: 90%;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
     font-size: 32px;
     color: #1b1b1d;
     text-align: center;
@@ -410,7 +421,8 @@
   .ctaf-title {
     display: flex;
     justify-content: center;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
     font-size: 20px;
     text-align: center;
     width: 85%;
@@ -422,7 +434,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
     font-size: 14px;
     width: 85%;
     margin: 0px;
@@ -434,7 +447,8 @@
     align-items: center;
   }
   .btn-ctaf {
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
     font-size: 14px;
     background-color: #d6575d;
     color: #f3f3f3;
@@ -503,25 +517,27 @@
     align-items: center;
     flex-direction: column;
     height: 550px;
-    background-color: #A88ECA;
+    background-color: #955fdd;
   }
   .cta-textf {
     display: flex;
     justify-content: center;
-    font-family: "Inter";
+    align-items: center;
     text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
     margin-top: 0px;
     margin-bottom: 15px;
     font-size: 20px;
     color: #f3f3f3;
-    letter-spacing: 2px;
     width: 100%;
   }
   .btn-endf {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
     font-size: 14px;
     background-color: #1b1b1d;
     color: #f3f3f3;
@@ -774,7 +790,7 @@
 .proyectos-background .project-img {
   display: flex;
   width: 650px;
-  height: 350px;
+  height: 313px;
   border-radius: 25px;
   object-fit: cover;
 }
@@ -953,7 +969,6 @@
   margin-bottom: 15px;
   font-size: 50px;
   color: #f3f3f3;
-  letter-spacing: 2px;
   width: 590px;
 }
 
@@ -968,7 +983,7 @@
   color: #f3f3f3;
   border: none;
   padding: 10px;
-  width: 580px;
+  width: 500px;
   height: 50px;
   border-radius: 10px;
   box-shadow: 0 0.4rem #000000;
@@ -1005,7 +1020,8 @@
   margin-bottom: 0px;
 }
 .headerm .header-textm1 {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   font-size: 50px;
   width: 280px;
   height: 122px;
@@ -1025,7 +1041,8 @@
   width: 58%;
 }
 .headerm .header-textm2 {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   font-size: 50px;
   width: 470px;
   height: 122px;
@@ -1048,7 +1065,8 @@
   height: 27px;
   text-align: center;
   font-size: 16px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
   text-decoration: none;
   color: #1b1b1d;
   background: transparent;
@@ -1083,23 +1101,25 @@
 .proyectos-background .proyectos-containerm {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   padding-bottom: 50px;
 }
 .proyectos-background .proyectos-titlem {
   display: flex;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   font-size: 40px;
   width: 900px;
   margin-top: 25px;
   margin-bottom: 0px;
 }
 .proyectos-background .proyectos-textm {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
   font-size: 20px;
   margin-bottom: 25px;
-  width: 900px;
+  width: 45%;
 }
 .proyectos-background .proyect1m, .proyectos-background .proyect2m, .proyectos-background .proyect3m {
   display: flex;
@@ -1107,11 +1127,11 @@
   justify-content: center;
   align-items: center;
   background-color: #1b1b1d;
-  box-shadow: 0px 6px 10px #000000;
-  border-radius: 50px;
+  box-shadow: 0px 3px 8px grey;
+  border-radius: 25px;
   color: #f3f3f3;
   gap: 45px;
-  padding: 40px;
+  padding: 25px;
   margin-bottom: 30px;
 }
 .proyectos-background .project-imgm {
@@ -1122,16 +1142,19 @@
   border-radius: 25px;
 }
 .proyectos-background .title-project {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   font-size: 24px;
 }
 .proyectos-background .text-project {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   width: 650px;
 }
 .proyectos-background .btn-project {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
   font-size: 20px;
   background-color: #f3f3f3;
   color: #1b1b1d;
@@ -1166,7 +1189,8 @@
   margin-right: 44px;
 }
 .cards .title-service {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   font-size: 40px;
   margin-top: 0px;
   margin-bottom: 100px;
@@ -1189,7 +1213,8 @@
   padding-left: 20px;
 }
 .cards .card-title {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   font-size: 24px;
   margin: 0px;
   padding-top: 20px;
@@ -1197,7 +1222,8 @@
   width: 223px;
 }
 .cards .card-text {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   margin: 0px;
   padding: 0px;
@@ -1218,12 +1244,12 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  font-family: "montserrat-bold";
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   margin-top: 0px;
   margin-bottom: 15px;
   font-size: 50px;
   color: #f3f3f3;
-  letter-spacing: 2px;
   width: 790px;
 }
 
@@ -1231,13 +1257,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "montserrat-semibold";
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   font-size: 24px;
   background-color: #1b1b1d;
   color: #f3f3f3;
   border: none;
   padding: 10px;
-  width: 780px;
+  width: 650px;
   height: 50px;
   border-radius: 10px;
   box-shadow: 0 0.4rem #000000;
@@ -1275,7 +1302,8 @@
   margin-bottom: 0px;
 }
 .headerd .header-textd1 {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   font-size: 50px;
   width: 320px;
   height: 122px;
@@ -1298,7 +1326,8 @@
   left: 10px;
 }
 .headerd .header-textd2 {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   font-size: 50px;
   width: 400px;
   height: 122px;
@@ -1321,7 +1350,8 @@
   height: 27px;
   text-align: center;
   font-size: 16px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
   text-decoration: none;
   color: #1b1b1d;
   background: transparent;
@@ -1356,18 +1386,20 @@
 .proyectos-background .proyectos-containerd {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   padding-bottom: 50px;
 }
 .proyectos-background .proyectos-titled {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   font-size: 40px;
   margin-top: 25px;
   margin-bottom: 0px;
 }
 .proyectos-background .proyectos-textd {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
   font-size: 20px;
   margin-bottom: 25px;
   width: 550px;
@@ -1378,11 +1410,11 @@
   justify-content: center;
   align-items: center;
   background-color: #1b1b1d;
-  box-shadow: 0px 6px 10px #000000;
-  border-radius: 50px;
+  box-shadow: 0px 3px 8px grey;
+  border-radius: 25px;
   color: #f3f3f3;
   gap: 45px;
-  padding: 40px;
+  padding: 25px;
   margin-bottom: 30px;
 }
 .proyectos-background .project-imgd {
@@ -1393,16 +1425,19 @@
   border-radius: 25px;
 }
 .proyectos-background .title-project {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   font-size: 24px;
 }
 .proyectos-background .text-project {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   width: 650px;
 }
 .proyectos-background .btn-project {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
   font-size: 20px;
   background-color: #f3f3f3;
   color: #1b1b1d;
@@ -1459,7 +1494,8 @@
   padding-left: 20px;
 }
 .cards .card-title {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   font-size: 24px;
   margin: 0px;
   padding-top: 20px;
@@ -1467,7 +1503,8 @@
   width: 266px;
 }
 .cards .card-text {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   margin: 0px;
   padding: 0px;
@@ -1488,12 +1525,12 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  font-family: "montserrat-bold";
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   margin-top: 0px;
   margin-bottom: 15px;
   font-size: 50px;
   color: #f3f3f3;
-  letter-spacing: 2px;
   width: 500px;
 }
 
@@ -1501,13 +1538,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "montserrat-semibold";
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   font-size: 24px;
   background-color: #1b1b1d;
   color: #f3f3f3;
   border: none;
   padding: 10px;
-  width: 480px;
+  width: 450px;
   height: 50px;
   border-radius: 10px;
   box-shadow: 0 0.4rem #000000;

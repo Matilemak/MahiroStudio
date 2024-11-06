@@ -1,8 +1,8 @@
 .headerf{
     display: flex;
     flex-direction: column;
-    margin-left: 44px;
-    margin-right: 44px;
+    margin-left: 0px;
+    margin-right: 0px;
     margin-top: 25px;
     .div-upf{
         display: flex;
@@ -11,46 +11,50 @@
         margin-bottom: 0px;
     }
         .header-textf1{
-            font-family: $bold;
+            font-family: $bold, sans-serif;
+            font-weight: 700;
             font-size: 45px;
-            width: 380px;
+            width: 900px;
             height: 122px;
             text-align: right;
             position: relative;
-            top: 60px;
-            left: 21%;
+            bottom: -70px;
+            left: 22%;
         }
         .img-headerf{
-            width: 36%;
+            width: 100%;
             height: 36%;
             position: relative;
             transform: rotate(10deg);
             top: 0px;
-            left: -19%;
+            left: -21%;
         }
         .background-headerf{
             position: relative;
-            top: 10px;
             left: 14%;
-            width: 42%;
+            bottom: 30px;
+            width: 60%;
         }
         .header-textf2{
-            font-family: $bold;
+            font-family: $bold, sans-serif;
+            font-weight: 700;
             font-size: 45px;
             width: 200px;
             height: 110px;
             text-align: left;
             position: relative;
             top: 145px;
-            left: -24%;
+            left: -25%;
         }
     .div-downf{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         position: relative;
-        margin-top: 55px;
-        top: -54px;
+        bottom: 73px;
+        margin-top: 0px;
+        margin-left: 44px;
+        margin-right: 44px;
         }
         .btn-social{
             position: relative;
@@ -59,7 +63,8 @@
             height: 27px;
             text-align: center;
             font-size: 16px;
-            font-family: $regular;
+            font-family: $regular, sans-serif;
+            font-weight: 400;
             text-decoration: none;
             color: $negro-var;
             background: transparent;
@@ -124,21 +129,24 @@
         z-index: -1;
     }
         .ctaf-title{
-            font-family: $bold;
+            font-family: $bold, sans-serif;
+            font-weight: 700;
             font-size: 35px;
             width: 675px;
             margin: 0px;
             z-index: 1;
         }
         .ctaf-text{
-            font-family: $medium;
+            font-family: $medium, sans-serif;
+            font-weight: 500;
             font-size: 20px;
             width: 670px;
             margin: 0px;
             z-index: 1;
         }
         .btn-ctaf{
-            font-family: $semibold;
+            font-family: $semibold, sans-serif;
+            font-weight: 600;
             font-size: 20px;
             background-color: $rojo;
             color: $blanco-var;
@@ -220,13 +228,16 @@
     align-items: center;
     flex-direction: column;
     height: 550px;
-    background-color: #A88ECA;
+    background-color: $morado;
 }
 
 .cta-textf{
     display: flex;
     justify-content: center;
-    font-family: "montserrat-bold";
+    align-items: center;
+    text-align: center;
+    font-family: $bold, sans-serif;
+    font-weight: 700;
     margin-top: 0px;
     margin-bottom: 15px;
     font-size: 50px;
@@ -239,18 +250,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "montserrat-semibold";
+    font-family: $semibold, sans-serif;
+    font-weight: 600;
     font-size: 24px;
     background-color: #1b1b1d;
     color: #f3f3f3;
     border: none;
-    padding: 10px;
-    width: 560px;
+    width: 410px;
     height: 50px;
     border-radius: 10px;
     box-shadow: 0 0.4rem #000000;
     cursor: pointer;
-    width: 465px;
 }
 .btn-endf:active {
     color: $rojo;
@@ -294,7 +304,8 @@
     }
     .header-text{
         width: 90%;
-        font-family: $bold;
+        font-family: $bold, sans-serif;
+        font-weight: 700;
         font-size: 32px;
         color: $negro-var;
         text-align: center;
@@ -326,7 +337,8 @@
             .ctaf-title{
                 display: flex;
                 justify-content: center;
-                font-family: $bold;
+                font-family: $bold, sans-serif;
+                font-weight: 700;
                 font-size: 20px;
                 text-align: center;
                 width: 85%;
@@ -338,7 +350,8 @@
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                font-family: $medium;
+                font-family: $medium, sans-serif;
+                font-weight: 500;
                 font-size: 14px;
                 width: 85%;
                 margin: 0px;
@@ -350,7 +363,8 @@
                 align-items: center;
             }
             .btn-ctaf{
-                font-family: $semibold;
+                font-family: $semibold, sans-serif;
+                font-weight: 600;
                 font-size: 14px;
                 background-color: $rojo;
                 color: $blanco-var;
@@ -433,25 +447,27 @@
             align-items: center;
             flex-direction: column;
             height: 550px;
-            background-color: #A88ECA;
+            background-color: $morado;
         }
         .cta-textf{
             display: flex;
             justify-content: center;
-            font-family: $bold;
+            align-items: center;
             text-align: center;
+            font-family: $bold, sans-serif;
+            font-weight: 700;
             margin-top: 0px;
             margin-bottom: 15px;
             font-size: 20px;
             color: $blanco-var;
-            letter-spacing: 2px;
             width: 100%;
         }
         .btn-endf{
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: $semibold;
+            font-family: $semibold, sans-serif;
+            font-weight: 600;
             font-size: 14px;
             background-color: $negro-var;
             color: $blanco-var;
