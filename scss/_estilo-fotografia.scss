@@ -11,31 +11,35 @@
         margin-bottom: 0px;
     }
         .header-textf1{
+            margin: 0px;
             font-family: $bold, sans-serif;
             font-weight: 700;
             font-size: 45px;
-            width: 900px;
-            height: 122px;
+            width: 140%;
+            height: 100px;
             text-align: right;
             position: relative;
-            bottom: -70px;
-            left: 22%;
+            bottom: -110px;
+            left: 18%;
         }
         .img-headerf{
-            width: 100%;
-            height: 36%;
+            max-width: 3000px;
+            width: 3000px;
+            height: auto;
+            object-fit: contain;
             position: relative;
             transform: rotate(10deg);
-            top: 0px;
-            left: -21%;
+            bottom: 50px;
+            left: -22%;
         }
         .background-headerf{
             position: relative;
-            left: 14%;
+            left: 12%;
             bottom: 30px;
             width: 60%;
         }
         .header-textf2{
+            margin: 0px;
             font-family: $bold, sans-serif;
             font-weight: 700;
             font-size: 45px;
@@ -43,8 +47,8 @@
             height: 110px;
             text-align: left;
             position: relative;
-            top: 145px;
-            left: -25%;
+            top: 180px;
+            left: -22%;
         }
     .div-downf{
         display: flex;
@@ -303,7 +307,8 @@
         align-items: center;
     }
     .header-text{
-        width: 90%;
+        max-width: 90%;
+        width: 380px;
         font-family: $bold, sans-serif;
         font-weight: 700;
         font-size: 32px;
@@ -312,7 +317,10 @@
         margin-bottom: 0px;
     }
     .header-img{
-        width: 80%;
+        width: 40%;
+        position: relative;
+        top: -30px;
+        margin-bottom: 60px;
     }
     .background-ctaf{
         display: flex;

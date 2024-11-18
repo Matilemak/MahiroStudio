@@ -14,18 +14,20 @@
             font-family: $bold, sans-serif;
             font-weight: 700;
             font-size: 50px;
-            width: 334px;
+            width: 210%;
             height: 122px;
             text-align: left;
             position: relative;
             top: 8px;
-            left: 230px;
+            left: 15%;
         }
         .img-ctap{
-            width: 33%;
+            width: 450px;
+            height: auto;
+            object-fit: fill;
             position: absolute;
             top: 85px;
-            left: 505px;
+            left: 36%;
         }
         .background-headerp{
             position: relative;
@@ -37,11 +39,11 @@
             font-family: $bold, sans-serif;
             font-weight: 700;
             font-size: 50px;
-            width: 259px;
+            width: 180%;
             height: 122px;
             text-align: left;
             position: relative;
-            right: 265px;
+            right: 10%;
             top: 10px;
         }
     .div-downp{
@@ -219,7 +221,8 @@
     }
         .project-img{
             display: flex;
-            width: 650px;
+            object-fit: contain;
+            width: 100%;
             height: 313px;
             border-radius: 25px;
             object-fit: cover;
