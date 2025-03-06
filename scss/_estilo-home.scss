@@ -308,7 +308,7 @@
     justify-content: center;
     font-family: "Inter", sans-serif;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 24px;
     margin-bottom: 100px;
   }
   
@@ -330,7 +330,7 @@
     margin-bottom: 50px;
   }
   
-  .certs1, .certs2 {
+  .certs1{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -348,6 +348,15 @@
     align-items: center;
     margin-bottom: 5px;
   }
+
+  .icon-certtd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:60px;
+    height:60px;
+    margin-bottom: 5px;
+  }
   
   .icon-text {
     display: flex;
@@ -355,6 +364,56 @@
     width: 120px;
     height: 25px;
   }
+  .icon-text {
+    display: flex;
+    justify-content: center;
+    width: 125px;
+    height: 25px;
+  }
+
+.title-client{
+  display: flex;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+.clients1{
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+.container-client{
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.icon-client1{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12%;
+}
+.icon-client2{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+.icon-client3{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
   
   /* - estilos CTA HOME  - */
   .cta-end {

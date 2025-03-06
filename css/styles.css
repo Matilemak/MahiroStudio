@@ -100,16 +100,16 @@
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 45px;
-  width: 140%;
+  width: 60%;
   height: 100px;
   text-align: right;
   position: relative;
   bottom: -110px;
-  left: 18%;
+  left: 12%;
 }
 .headerf .img-headerf {
-  max-width: 3000px;
-  width: 3000px;
+  max-width: 100%;
+  width: 100%;
   height: auto;
   object-fit: contain;
   position: relative;
@@ -121,7 +121,8 @@
   position: relative;
   left: 12%;
   bottom: 30px;
-  width: 60%;
+  width: 100%;
+  height: 100%;
 }
 .headerf .header-textf2 {
   margin: 0px;
@@ -141,7 +142,7 @@
   justify-content: space-between;
   position: relative;
   bottom: 73px;
-  margin-top: 0px;
+  margin-top: 70px;
   margin-left: 44px;
   margin-right: 44px;
 }
@@ -587,15 +588,14 @@
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 50px;
-  width: 210%;
+  width: 60%;
   height: 122px;
   text-align: left;
   position: relative;
-  top: 8px;
   left: 15%;
 }
 .headerp .img-ctap {
-  width: 450px;
+  width: 26%;
   height: auto;
   object-fit: fill;
   position: absolute;
@@ -603,27 +603,28 @@
   left: 36%;
 }
 .headerp .background-headerp {
+  display: flex;
   position: relative;
-  width: 55%;
-  right: 55px;
+  width: 100%;
+  left: 0%;
   bottom: 3px;
 }
 .headerp .header-textp2 {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 50px;
-  width: 180%;
+  width: 60%;
   height: 122px;
   text-align: left;
   position: relative;
-  right: 10%;
+  right: 8%;
   top: 10px;
 }
 .headerp .div-downp {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 163px;
+  margin-top: 210px;
   margin-bottom: 100px;
 }
 .headerp .btn-social {
@@ -2074,7 +2075,7 @@
   justify-content: center;
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 24px;
   margin-bottom: 100px;
 }
 
@@ -2096,7 +2097,7 @@
   margin-bottom: 50px;
 }
 
-.certs1, .certs2 {
+.certs1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -2115,11 +2116,75 @@
   margin-bottom: 5px;
 }
 
+.icon-certtd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 5px;
+}
+
 .icon-text {
   display: flex;
   justify-content: center;
   width: 120px;
   height: 25px;
+}
+
+.icon-text {
+  display: flex;
+  justify-content: center;
+  width: 125px;
+  height: 25px;
+}
+
+.title-client {
+  display: flex;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.clients1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.container-client {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-client1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12%;
+}
+
+.icon-client2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+.icon-client3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
 }
 
 /* - estilos CTA HOME  - */
@@ -2183,6 +2248,101 @@
   background-color: #fbfbfb;
 }
 
+.dark-mode {
+  color: #ffffff;
+  background-color: #060b34;
+}
+
+body.dark-mode {
+  color: #ffffff;
+  background-color: #060b34;
+}
+
+.dark-mode .nav-link {
+  color: #ffffff;
+}
+
+/* DARK MODE BUTTON */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background: #d6575d;
+  color: #ffffff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  left: 91%;
+  bottom: 4%;
+  place-content: center;
+  transition: background 300ms, transform 200ms;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+.button-text {
+  position: absolute;
+  inset: 0;
+  animation: text-rotation 8s linear infinite;
+}
+
+.button-text > span {
+  position: absolute;
+  transform: rotate(calc(19deg * var(--index)));
+  inset: -8px;
+}
+
+.button-circle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  background: #ffffff;
+  color: #d6575d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sun-icon {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.moon-icon {
+  position: absolute;
+  transform: translate(0);
+}
+
+.button:hover {
+  background: #1b1b1d;
+  transform: scale(1.05);
+}
+
+.button:hover .moon-icon {
+  transform: translate(150%, -150%);
+}
+
+.button:hover .sun-icon {
+  transform: translate(0);
+}
+
+@keyframes text-rotation {
+  to {
+    rotate: 360deg;
+  }
+}
 .alinks {
   list-style-type: none;
   text-decoration: none;
@@ -2378,6 +2538,26 @@
 /* - dispositivos ancho máximo 1240px y ancho mínimo 768px - */
 @media only screen and (min-width: 768px) and (max-width: 1240px) {
   /* - responsive home - */
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background: #d6575d;
+    color: #ffffff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    left: 85%;
+    bottom: 30%;
+    place-content: center;
+    transition: background 300ms, transform 200ms;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+  }
   .menu-icon {
     display: flex;
     flex-direction: column;
@@ -3791,6 +3971,26 @@
 */
 @media only screen and (max-width: 768px) {
   /* - responsive home - */
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background: #d6575d;
+    color: #ffffff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    left: 65%;
+    bottom: 24%;
+    place-content: center;
+    transition: background 300ms, transform 200ms;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+  }
   .menu-icon {
     display: flex;
     flex-direction: column;
