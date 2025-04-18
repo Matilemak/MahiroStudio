@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Descubre soluciones digitales innovadoras y estrategias de vanguardia que tu negocio necesita para potenciar tu presencia en línea, convirtiendo a tu audiencia en clientes." />
     <meta name="keywords" content="servicio de marketing, servicio de publicidad, desarrollo web">
-    <script src="dark-mode.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -90,7 +89,7 @@
             <img class="arrow-home" src="./assets/icon/flecha-header.png" alt="flecha navegación home">
         </div>
         <!-- DARK MODE BUTTON -->
-        <button class="button" onclick="toggleDarkMode()">
+        <button class="button" id="darkModeToggle" onclick="toggleDarkMode()">
             <p class="button-text">
             <span style="--index: 0;">M</span>
             <span style="--index: 1;">O</span>
@@ -111,18 +110,84 @@
             </p>
 
             <div class="button-circle">
-            <img
-                class="button-icon moon-icon"
-                src="./assets/icon/moon.svg"
-                alt="Modo Oscuro"
-            />
-            <img
-                class="button-icon sun-icon"
-                src="./assets/icon/sunny-sharp.svg"
-                alt="Modo Claro"
-            />
+            <img class="button-icon moon-icon" src="./assets/icon/moon.svg" alt="Modo Oscuro"/>
+            <img class="button-icon sun-icon"  src="./assets/icon/sunny-sharp.svg" alt="Modo Claro"/>
             </div>
         </button>
+
+        <section class="plans">
+            <div class="plans-sup">
+                <div class="plans-up">
+                    <div>
+                        <h2 class="plans-title">IMPULSA TU NEGOCIO</h2>
+                        <p class="plans-second-line">CON EL MEJOR PLAN</p>
+                    </div>
+                    <div>
+                        <img class="plans-icon" src="./assets/icon/icon-planes.png">
+                    </div>
+                </div>
+                <div>
+                    <div class="plans-cards">
+                        <div class="plans-card1">
+                            <h3 class="plans-card-title">IDENTIDAD INICIAL</h3>
+                            <p class="plans-card-text">Ideal para emprendedores o negocios que necesitan lo básico para tener presencia digital.</p>
+                            <ul class="plans-card-list">
+                                <li><strong>Branding e identidad visual</strong></li>
+                                <li>Diseño y desarrollo de <strong>landing page</strong></li>
+                                <li><strong>Fotografía </strong> para productos y servicios (Hasta 20 fotos)</li>
+                                <li>Diseño <strong>RRSS</strong></li>
+                            </ul>
+                            <p class="plans-price">Desde: <strong>$600 USD</strong></p>
+                            <a class="plans-btn" href="https://www.mahirostudio.cl/contacto" target="_blank">
+                                <button class="plans-contact">¡Comencemos!</button>
+                            </a>
+                        </div>
+                        <div class="plans-card1">
+                            <h3 class="plans-card-title">IMPULSO DIGITAL</h3>
+                            <p class="plans-card-text">Para negocios en crecimiento que desean mejorar su imagen y ampliar su presencia digital.</p>
+                            <ul class="plans-card-list">
+                                <li><strong>Rebranding </strong> o desarrollo de <strong>identidad visual</strong></li>
+                                <li>Diseño web, Optimización <strong>UX/UI</strong></li>
+                                <li><strong>Fotografía </strong> para productos y servicios (Hasta 60 fotos)</li>
+                                <li>Estrategia de marketing en <strong>RRSS y Google Ads</strong></li>
+                                <li>Optimización <strong>SEO</strong></li>
+                            </ul>
+                            <p class="plans-price">Desde: <strong>$1.100 USD</strong></p>
+                            <a class="plans-btn" href="https://www.mahirostudio.cl/contacto" target="_blank">
+                                <button class="plans-contact">¡Comencemos!</button>
+                            </a>
+                        </div>
+                        <div class="plans-card1">
+                            <h3 class="plans-card-title">DIFERENCIACIÓN DIGITAL</h3>
+                            <p class="plans-card-text">Para negocios que buscan diferenciarse con estrategias que potencien su competitividad.</p>
+                            <ul class="plans-card-list">
+                                <li>Desarrollo de <strong> Branding</strong></li>
+                                <li>Optimización web <strong>UX/UI</strong></li>
+                                <li><strong>Fotografía </strong> para productos y servicios a medida</li>
+                                <li>Estrategia de marketing en <strong>RRSS, Email y Google Ads</strong></li>
+                                <li>Optimización <strong>SEO Avanzado</strong></li>
+                            </ul>
+                            <p class="plans-price">Desde: <strong>$1.600 USD</strong></p>
+                            <a class="plans-btn" href="https://www.mahirostudio.cl/contacto" target="_blank">
+                                <button class="plans-contact">¡Comencemos!</button>
+                            </a>
+                        </div>
+                </div>
+                    
+                    <div class="plans-end">
+                        <div>
+                            <img class="plans-icon2" src="./assets/icon/icon-proyectos.png">
+                        </div>
+                        <div class="plans-btnend">
+                            <p class="plans-card-text">Si prefieres, puedes <strong>cotizar gratis </strong>un<br> plan personalizado a tu medida aquí.</p>
+                            <a href="https://www.mahirostudio.cl/contacto" target="_blank">
+                                <button class="plans-contact2">Personaliza tu plan</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="about">
             <div class="about-left">
@@ -143,6 +208,27 @@
                 </a>
             </div>
         </section>
+        <div class="about-down">
+            <h3 class="exp-titleup">EXPERIENCIA</h3>
+            <div class="container-exp">
+                <div class="exp">
+                    <p class="exp-title">Fotografía</p>
+                    <p class="exp-data">+9 años</p>
+                </div>
+                <div class="exp">
+                    <p class="exp-title">Pulicidad y Marketing</p>
+                    <p class="exp-data">+2 años</p>
+                </div>
+                <div class="exp">
+                    <p class="exp-title">Diseño gráfico</p>
+                    <p class="exp-data">+2 años</p>
+                </div>
+                <div class="exp">
+                    <p class="exp-title">Diseño y desarrollo web</p>
+                    <p class="exp-data">+1 año</p>
+                </div>
+            </div>
+        </div>
 
         <section class="services">
             <h2 class="services-title">SERVICIOS</h2>

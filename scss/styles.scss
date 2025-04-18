@@ -20,12 +20,51 @@
 }
 
 body.dark-mode{
-    color: $blanco;
     background-color: $dark-mode;
+}
+
+.dark-mode .header-text,
+.dark-mode .header-textp,
+.dark-mode .header-textm,
+.dark-mode .header-textd{
+    color: $negro-var !important;
+}
+
+.dark-mode .cards{
+    background-color: $dark-mode2;
 }
 
 .dark-mode .nav-link{
     color: $blanco;
+}
+
+.dark-mode .btn-social{
+    position: relative;
+    display: inline-block;
+    width: 105px;
+    height: 27px;
+    text-align: center;
+    font-size: 16px;
+    font-family: $regular, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: $blanco-var;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.3s;
+    border: 2px solid $blanco-var;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 ;
+}
+
+.dark-mode .btn-social:hover{
+    color: $blanco-var;
+    box-shadow: inset 0 -100px 0 0 $rojo;
+    border: 2px solid $rojo;
+}
+
+.dark-mode .btn-social:active {
+    transform: scale(0.9);
 }
 
 /* DARK MODE BUTTON */
@@ -321,7 +360,20 @@ body.dark-mode{
     font-weight: 500;
     font-family: $medium, sans-serif;
 }
-
+.cta-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: $negro-var;
+    color: $blanco-var;
+    height: auto;
+    font-family: $medium;
+    font-size: 12px;
+    padding: 6px;
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+}
     .menu-icon {
         display: flex;
         flex-direction: column;
@@ -559,6 +611,7 @@ body.dark-mode{
         height: 24px;
         margin-left: 0px;
     }
+
     .about {
         background-color: #1b1b1d;
         color: #f3f3f3;
@@ -1753,6 +1806,11 @@ body.dark-mode{
 @media only screen and (max-width: 768px) {
     
     /* - responsive home - */
+    html, body {
+        overflow-x: hidden;
+    }
+    
+    /* DARK MODE BUTTON */
     .button {
         display: flex;
         justify-content: center;
@@ -1761,17 +1819,93 @@ body.dark-mode{
         border: none;
         background: $rojo;
         color: $blanco;
-        width: 100px;
-        height: 100px;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
         overflow: hidden;
         position: absolute;
-        left: 65%;
-        bottom: 24%;
+        top:16%;
+        left: 44%;
+        bottom: 37%;
         place-content: center;
         transition: background 300ms, transform 200ms;
         font-weight: 500;
         font-family: $medium, sans-serif;
+    }
+    .cta-contacto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: $negro-var;
+        color: $blanco-var;
+        height: auto;
+        font-family: $medium;
+        font-size: 12px;
+        padding: 6px;
+        border-radius: 10px 10px 10px 10px;
+        position: relative;
+    }
+    
+    .button-text {
+        position: absolute;
+        inset: 0;
+        animation: text-rotation 8s linear infinite;
+        font-size: 9px;
+    }
+    
+    .button-text > span {
+        position: absolute;
+        transform: rotate(calc(19deg * var(--index)));
+        inset: -8px;
+    }
+    
+    .button-circle {
+        position: relative;
+        width: 28px;
+        height: 28px;
+        overflow: hidden;
+        background: $blanco;
+        color: $rojo;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .button-icon {
+        width: 16px;
+        height: 16px;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .sun-icon {
+        position: absolute;
+        transform: translate(-150%, 150%);
+    }
+    
+    .moon-icon {
+        position: absolute;
+        transform: translate(0);
+    }
+    
+    .button:hover {
+        background: $negro-var;
+        transform: scale(1.05);
+    }
+    
+    .button:hover .moon-icon {
+        transform: translate(150%, -150%);
+    }
+    
+    .button:hover .sun-icon {
+        transform: translate(0);
+    }
+    
+    @keyframes text-rotation {
+        to {
+            rotate: 360deg;
+        }
     }
         .menu-icon {
             display: flex;
@@ -2019,7 +2153,8 @@ body.dark-mode{
             margin-top: 50px;
             padding-top: 100px;
             padding-bottom: 50px;
-            width: 100%;
+            width: auto;
+            overflow: auto;
         }
         .about-left{
             display: flex;
@@ -2106,8 +2241,8 @@ body.dark-mode{
             background-color: #1b1b1d;
             padding: 30px 20px 20px 20px;
             margin-top: 100px;
-            max-width: 100%;
-            min-width: 280px;
+            width: 80%;
+            min-width: 240px;
             height: 340px;
             transform: none;
           }
@@ -2175,8 +2310,8 @@ body.dark-mode{
             height: 120px;
           }
           .icon-card2 {
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             padding-left: 0px;
           }
           .title-cert {
@@ -2221,13 +2356,37 @@ body.dark-mode{
             width: 120px;
             height: 25px;
           }
+          .container-client{
+            display: flex;
+            flex-direction: column;
+          }
+          .icon-client1{
+            display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 40%;
+          }
+          .icon-client2{
+            display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 60%;
+          }
+          .icon-client3{
+            display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 35%;
+          }
           .cta-end {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            width: 100%;
             height: 500px;
             background-color: #955fdd;
+            overflow: hidden;
           }
           .cta-text {
             display: flex;
@@ -2236,7 +2395,7 @@ body.dark-mode{
             font-weight: 700;
             margin-top: 0px;
             margin-bottom: 15px;
-            font-size: 30px;
+            font-size: 24px;
             color: #f3f3f3;
             letter-spacing: 2px;
           }
@@ -2251,10 +2410,11 @@ body.dark-mode{
             color: #f3f3f3;
             border: none;
             padding: 10px;
-            width: 350px;
+            width: 290px;
             height: 50px;
             border-radius: 10px;
             box-shadow: none;
+            overflow: hidden;
           }
           .btn-end:active {
             color: white;
@@ -2846,6 +3006,7 @@ body.dark-mode{
             flex-direction: column;
             height: 550px;
             background-color: #A88ECA;
+            overflow: hidden;
         }
         
         .cta-textp{

@@ -33,6 +33,23 @@
       width: 28%;
     }
 }
+
+.cta-contacto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: $negro-var;
+  color: $blanco-var;
+  height: auto;
+  font-family: $medium;
+  font-size: 16px;
+  padding: 3px;
+  border-radius: 0 15px 15px 0px;
+  position: relative;
+  bottom: 22%;
+}
+
 .form {
     display: flex;
     flex-direction: column;
