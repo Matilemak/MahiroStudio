@@ -455,7 +455,6 @@ width: 160px;
     font-size: 40px;
     margin-bottom: 100px;
   }
-  
   .card {
     display: flex;
     flex-direction: row;
@@ -646,13 +645,45 @@ width: 160px;
     width: 125px;
     height: 25px;
   }
+
 /* - slider clientes - */
+
+.clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.div-client{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .clients1{
     width: 75vw;
     height: auto;
     overflow: hidden;
     margin: auto;
     padding-bottom: 100px;
+}
+.client-title {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding-top: 100px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 0px;
+  }
+.bar{
+  width: 200px;
+  height: 5px;
+  background-color: $rojo;
+  margin-top: 6px;
+  border-radius: 3px;
+  margin-bottom: 100px;
 }
 .clients1 .container-client{
   display: flex;

@@ -89,6 +89,87 @@
             }
 }
 
+.packs-container{
+    background-color: $morado;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.pack{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.pack-rrss{
+    width: 50%;
+}
+.pack-container{
+    background-color: $blanco-var;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 25px;
+    margin-left: 40px;
+    width: 26%;
+    height: fit-content;
+    color: $negro-var;
+    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.25);
+
+}
+.pack-title{
+    display: flex;
+    font-family: $bold, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+.pack-text{
+    display: flex;
+    font-family: $medium, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.pack-text-down{
+    display: flex;
+    font-family: $medium, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+.pack-price{
+    display: flex;
+    font-family: $semibold, sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.pack-btn{
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    text-decoration: none;
+    padding-right: 0px;
+}
+
+.packs-container2{
+    background-color: $blanco;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.pack2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.pack-id{
+    width: 45%;
+    margin-left: 0px;
+}
 
 .background-ctap{
     display: flex;

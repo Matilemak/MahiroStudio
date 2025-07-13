@@ -662,6 +662,97 @@
   height: 40px;
 }
 
+.packs-container {
+  background-color: #955fdd;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.pack {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.pack-rrss {
+  width: 50%;
+}
+
+.pack-container {
+  background-color: #f3f3f3;
+  padding-left: 60px;
+  padding-right: 60px;
+  border-radius: 25px;
+  margin-left: 40px;
+  width: 26%;
+  height: fit-content;
+  color: #1b1b1d;
+  box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.pack-title {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+.pack-text {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.pack-text-down {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  margin-top: 60px;
+  margin-bottom: 0px;
+}
+
+.pack-price {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.pack-btn {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  text-decoration: none;
+  padding-right: 0px;
+}
+
+.packs-container2 {
+  background-color: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.pack2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.pack-id {
+  width: 45%;
+  margin-left: 0px;
+}
+
 .background-ctap {
   display: flex;
   flex-direction: column;
@@ -2474,12 +2565,46 @@
 }
 
 /* - slider clientes - */
+.clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.div-client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .clients1 {
   width: 75vw;
   height: auto;
   overflow: hidden;
   margin: auto;
   padding-bottom: 100px;
+}
+
+.client-title {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding-top: 100px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+.bar {
+  width: 200px;
+  height: 5px;
+  background-color: #d6575d;
+  margin-top: 6px;
+  border-radius: 3px;
+  margin-bottom: 100px;
 }
 
 .clients1 .container-client {
