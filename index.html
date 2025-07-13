@@ -22,8 +22,8 @@
         </a>
         <ul class="nav-links">
             <a class="nav-link" href="./paginas/fotografia.html">Fotografía</a>
-            <a class="nav-link" href="./paginas/publicidad.html">Publicidad</a>
-            <a class="nav-link" href="./paginas/marketing-digital.html">Marketing Digital</a>
+            <a class="nav-link" href="./paginas/publicidad.html">Diseño</a>
+            <a class="nav-link" href="./paginas/marketing-digital.html">Marketing digital</a>
             <a class="nav-link" href="./paginas/desarrollo-web.html">Desarrollo Web</a>
             <a href="./paginas/contacto.html">
                 <button class="btn-contact">
@@ -43,8 +43,8 @@
         </label>
         <ul class="navlinks-mobile">
             <li><a class="nav-linkmb" href="./paginas/fotografia.html">Fotografía</a></li>
-            <li><a class="nav-linkmb" href="./paginas/publicidad.html">Publicidad</a></li>
-            <li><a class="nav-linkmb" href="./paginas/marketing-digital.html">Marketing Digital</a></li>
+            <li><a class="nav-linkmb" href="./paginas/publicidad.html">Diseño</a></li>
+            <li><a class="nav-linkmb" href="./paginas/marketing-digital.html">Marketing digital</a></li>
             <li><a class="nav-linkmb" href="./paginas/desarrollo-web.html">Desarrollo Web</a></li>
             <li><a href="./paginas/contacto.html" class="nav-linkmb">Contactame</a></li>
         </ul>
@@ -53,8 +53,11 @@
     <main>
         <header class="header">
             <div class="cta-home">
-                <h1 class="title-home" data-animation="fade">Servicios enfocados en la experiencia del usuario.</h1>
-                <p class="titletext-home" data-animation="fade">Potenciemos tu negocio en la era digital y transformemos a tus prospectos en clientes.</p>
+                <h1 class="title-home" data-animation="fade">Diseñamos experiencias para marcas que quieren hacer historia<strong class="dot">.</strong></h1>
+                <p class="titletext-home" data-animation="fade">Creamos tu marca y la potenciamos desde el diseño estratégico orientándola a medios digitales para un mayor impacto.</p>
+                <a class="header-btn" href="https://www.mahirostudio.cl/contacto" target="_blank">
+                    <button class="plans-contact">Solicita una cotización</button>
+                </a>
             </div>
             <div class="icons-header">
                 <img class="cellphone animation-1" src="./assets/img/wireframe-cellphone-interface.png" alt="Interfaz de celular">
@@ -88,39 +91,13 @@
         <div class="arrow">
             <img class="arrow-home" src="./assets/icon/flecha-header.png" alt="flecha navegación home">
         </div>
-        <!-- DARK MODE BUTTON -->
-        <button class="button" id="darkModeToggle" onclick="toggleDarkMode()">
-            <p class="button-text">
-            <span style="--index: 0;">M</span>
-            <span style="--index: 1;">O</span>
-            <span style="--index: 2;">D</span>
-            <span style="--index: 3;">O</span>
-            <span style="--index: 4;"> </span>
-            <span style="--index: 5;">O</span>
-            <span style="--index: 6;">S</span>
-            <span style="--index: 7;">C</span>
-            <span style="--index: 8;">U</span>
-            <span style="--index: 9;">R</span>
-            <span style="--index: 10;">O</span>
-            <span style="--index: 11;"> </span>
-            <span style="--index: 12;">A</span>
-            <span style="--index: 13;">Q</span>
-            <span style="--index: 14;">U</span>
-            <span style="--index: 15;">Í</span>
-            </p>
-
-            <div class="button-circle">
-            <img class="button-icon moon-icon" src="./assets/icon/moon.svg" alt="Modo Oscuro"/>
-            <img class="button-icon sun-icon"  src="./assets/icon/sunny-sharp.svg" alt="Modo Claro"/>
-            </div>
-        </button>
 
         <section class="plans">
             <div class="plans-sup">
                 <div class="plans-up">
                     <div>
                         <h2 class="plans-title">IMPULSA TU NEGOCIO</h2>
-                        <p class="plans-second-line">CON EL MEJOR PLAN</p>
+                        <p class="plans-second-line">Con el mejor plan</p>
                     </div>
                     <div>
                         <img class="plans-icon" src="./assets/icon/icon-planes.png">
@@ -196,15 +173,16 @@
             <div class="about-right">
                 <h2 class="titles-h2">SOBRE EL ESTUDIO</h2>
                 <p class="about-text">
-                    Un estudio “All-in-one” que proporciona soluciones digitales innovadoras, estrategias y diseños que potencian el crecimiento de tu marca. Con profesionalismo y una constante búsqueda de innovación para ofrecer a nuestros clientes un servicio de calidad y a la vanguardia de las últimas tendencias digitales, destacando la capacidad de adaptación a la par con la evolución del mundo digital, brindando un “Boost” al posicionamiento de la marca en el mercado.</p>
-                <p class="about-text">
-                    <span class="span">Publicista</span> especializado en <span class="span">marketing digital</span>, con altas competencias en fotografía y diseño gráfico. <span class="span">Desarrollador web Frontend React con foco en Diseño UX / UI</span> enfocado en el diseño y desarrollo de aplicaciones web/móviles pensadas para que el usuario tenga la mejor experiencia de navegación.
+                    Un estudio digital “All-in-one” donde ofrecemos soluciones innovadoras, estrategias y diseños que potencian el crecimiento de tu marca.
                 </p>
-                <a class="cv" href="./assets/docs/cv-web.pdf" download="cv-web" target="_blank">
+                <p class="about-text">
+                    Creamos marcas y diseñamos experiencias pensadas en tus clientes para que tengan la mejor experiencia de compra.
+                </p>
+                <!-- <a class="cv" href="./assets/docs/cv-web.pdf" download="cv-web" target="_blank">
                     <button class="btn-contact"> Descargar CV </button>
-                </a>
+                </a> -->
                 <a href="https://www.behance.net/MatiasAlcayaga" target="_blank">
-                    <button class="btn-contact portfolio"> Ver Portfolio </button>
+                    <button class="btn-portfolio"> Ver portafolio </button>
                 </a>
             </div>
         </section>
@@ -216,19 +194,64 @@
                     <p class="exp-data">+9 años</p>
                 </div>
                 <div class="exp">
-                    <p class="exp-title">Pulicidad y Marketing</p>
-                    <p class="exp-data">+2 años</p>
+                    <p class="exp-title">Marketing digital</p>
+                    <p class="exp-data">+3 años</p>
                 </div>
                 <div class="exp">
                     <p class="exp-title">Diseño gráfico</p>
-                    <p class="exp-data">+2 años</p>
+                    <p class="exp-data">+3 años</p>
                 </div>
                 <div class="exp">
                     <p class="exp-title">Diseño y desarrollo web</p>
-                    <p class="exp-data">+1 año</p>
+                    <p class="exp-data">+2 años</p>
                 </div>
             </div>
         </div>
+
+        <section class="clients">
+            <h2 class="services-title">CLIENTES QUE CONFIARON</h2>
+            <div class="clients1">
+                <div class="container-client">
+                    <div class="slide-client">
+                        <img class="img-client" src="./assets/icon/logo-vn.png" alt="logo valle nevado">
+                    </div>
+                    <div class="slide-client">
+                        <img class="img-client" src="./assets/icon/logo-bp.png" alt="logo btg pactual">
+                    </div>
+                    <div class="slide-client">
+                        <img class="img-client" src="./assets/icon/logo-at.png" alt="logo amukan trip">
+                    </div>
+                    <div class="slide-client">
+                        <img class="img-client" src="./assets/icon/logo-tv.png" alt="logo transportes vijuk">
+                    </div>
+                    <div class="slide-client">
+                        <img class="img-client" src="./assets/icon/logo-gn.png" alt="logo grupo newen">
+                    </div>
+                    <div class="slide-client">
+                        <img class="img-client" src="./assets/icon/logo-cg.png" alt="logo click group">
+                    </div>
+
+                    <div class="slide-client">
+                        <img class="img-client" src="./assets/icon/logo-vn.png" alt="logo valle nevado">
+                    </div>
+                    <div class="slide-client">
+                        <img class="img-client" src="./assets/icon/logo-bp.png" alt="logo btg pactual">
+                    </div>
+                    <div class="slide-client">
+                        <img class="img-client" src="./assets/icon/logo-at.png" alt="logo amukan trip">
+                    </div>
+                    <div class="slide-client">
+                        <img class="img-client" src="./assets/icon/logo-tv.png" alt="logo transportes vijuk">
+                    </div>
+                    <div class="slide-client">
+                        <img class="img-client" src="./assets/icon/logo-gn.png" alt="logo grupo newen">
+                    </div>
+                    <div class="slide-client">
+                        <img class="img-client" src="./assets/icon/logo-cg.png" alt="logo click group">
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="services">
             <h2 class="services-title">SERVICIOS</h2>
@@ -245,7 +268,7 @@
                                     </div>
                                     <div class="checkmark">
                                         <img class="checkmark-icon" src="./assets/icon/checkmark-circle-sharp.png" alt="ícono check">
-                                        <p class="card-text">Matrimonios y eventos</p>
+                                        <p class="card-text">Fotografía para ventos</p>
                                     </div>
                                     <div class="checkmark">
                                         <img class="checkmark-icon" src="./assets/icon/checkmark-circle-sharp.png" alt="ícono check">
@@ -253,7 +276,7 @@
                                     </div>
                                     <div class="checkmark">
                                         <img class="checkmark-icon" src="./assets/icon/checkmark-circle-sharp.png" alt="ícono check">
-                                        <p class="card-text">Sesiones de estudio</p>
+                                        <p class="card-text">Fotografía comercial</p>
                                     </div>
                                     <div class="checkmark">
                                         <img class="checkmark-icon" src="./assets/icon/checkmark-circle-sharp.png" alt="ícono check">
@@ -266,7 +289,7 @@
                             </div>
                         </div>
                         <div class="card-back">
-                            <p class="card-text"> 50% descuento al contratar tu primer servicio</p>
+                            <p class="card-text"> Destaca tus productos y servicios<br> de la competencia con mejores fotografías.</p>
                         </div>
                     </div>
                 </div>
@@ -274,23 +297,23 @@
                     <div class="card-inner">
                         <div class="card-front">
                             <div class="card-left">
-                                <h3 class="card-title">Publicidad</h3>
+                                <h3 class="card-title">Diseño gráfico</h3>
                                 <ul class="ul">
                                     <div class="checkmark">
                                         <img class="checkmark-icon" src="./assets/icon/checkmark-circle-sharp.png" alt="ícono check">
-                                        <p class="card-text">Diseño de branding</p>
+                                        <p class="card-text">Branding</p>
                                     </div>
                                     <div class="checkmark">
                                         <img class="checkmark-icon" src="./assets/icon/checkmark-circle-sharp.png" alt="ícono check">
-                                        <p class="card-text">Diseño identidad visual</p>
+                                        <p class="card-text">Identidad visual</p>
                                     </div>
                                     <div class="checkmark">
                                         <img class="checkmark-icon" src="./assets/icon/checkmark-circle-sharp.png" alt="ícono check">
-                                        <p class="card-text">Diseño de gráficas RRSS</p>
+                                        <p class="card-text">Gráficas RRSS</p>
                                     </div>
                                     <div class="checkmark">
                                         <img class="checkmark-icon" src="./assets/icon/checkmark-circle-sharp.png" alt="ícono check">
-                                        <p class="card-text">Creación de campañas</p>
+                                        <p class="card-text">Merchandising / Editorial</p>
                                     </div>
                                     <div class="checkmark">
                                         <img class="checkmark-icon" src="./assets/icon/checkmark-circle-sharp.png" alt="ícono check">
@@ -303,7 +326,7 @@
                             </div>
                         </div>
                         <div class="card-back">
-                            <p class="card-text"> 50% descuento al contratar tu primer servicio</p>
+                            <p class="card-text"> Diseño pensado estratégicamente <br> para generar mayor impacto.</p>
                         </div>
                     </div>
                 </div>
@@ -322,7 +345,7 @@
                                     </div>
                                     <div class="checkmark">
                                         <img class="checkmark-icon" src="./assets/icon/checkmark-circle-sharp.png" alt="ícono check">
-                                        <p class="card-text">Gestión de medios</p>
+                                        <p class="card-text">SEO / SEM</p>
                                     </div>
                                     <div class="checkmark">
                                         <img class="checkmark-icon" src="./assets/icon/checkmark-circle-sharp.png" alt="ícono check">
@@ -343,7 +366,7 @@
                             </div>
                         </div>
                         <div class="card-back">
-                            <p class="card-text"> 50% descuento al contratar tu primer servicio</p>
+                            <p class="card-text">Llega a más clientes a través de<br> medios digitales como Google Ads. </p>
                         </div>
                     </div>
                 </div>
@@ -380,7 +403,7 @@
                             </div>
                         </div>
                         <div class="card-back">
-                            <p class="card-text"> 50% descuento al contratar tu primer servicio</p>
+                            <p class="card-text"> Un sitio web para tu negocio ya no es una opción,<br>es indispensable para su crecimiento y visibilidad. </p>
                         </div>
                     </div>
                 </div>
@@ -413,18 +436,6 @@
             </div>
         </section>
 
-        <section class="clients">
-            <h2 class="title-client">CLIENTES</h2>
-            <div class="clients1">
-                <div class="container-client">
-                    <img class="icon-client1" src="./assets/icon/valle-nevado.png" alt="ícono de cliente valle nevado">
-                    <img class="icon-client2" src="./assets/icon/btg-pactual.png" alt="ícono de cliente btg pactual">
-                    <img class="icon-client3" src="./assets/icon/amukan-trip.svg" alt="ícono de cliente amukan trip">
-                </div>
-            </div>
-        </section>
-
-
         <section class="cta-end">
             <h2 class="cta-text">¡Trabajemos juntos!</h2>
             <a class="alinks" href="./paginas/contacto.html">
@@ -448,7 +459,7 @@
                 <p class="footer-title">SERVICIOS</p>
                 <ul class="ul2">
                     <a class="footer-text" href="./paginas/fotografia.html">Fotografía</a>
-                    <a class="footer-text" href="./paginas/publicidad.html">Publicidad</a>
+                    <a class="footer-text" href="./paginas/publicidad.html">Diseño</a>
                     <a class="footer-text" href="./paginas/marketing-digital.html">Marketing Digital</a>
                     <a class="footer-text" href="./paginas/desarrollo-web.html">Desarrollo Web</a>
                 </ul>

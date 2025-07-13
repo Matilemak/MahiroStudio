@@ -20,7 +20,7 @@
   .cta-home {
     display: flex;
     flex-direction: column;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
   }
   
   .title-home {
@@ -28,17 +28,27 @@
     margin-bottom: 15px;
     font-family: "Inter", sans-serif;
     font-weight: 700;
-    font-size: 45px;
+    font-size: 38px;
   }
-  
+  .dot{
+    color: $azul;
+  }
   .titletext-home {
     width: 400px;
     margin: 0px;
     font-family: "Inter", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 19px;
   }
-  
+  .header-btn{
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  width: 400px;
+  padding-top: 20px;
+  padding-left: 0px;
+  margin-left: 0px;
+  }
   .btn-socialmedia {
     width: 40px;
     height: 40px;
@@ -112,8 +122,10 @@
     margin-top: 0%;
   }
   
-  .arrow-home {
-    margin-left: 44px;
+  .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   /* - estilos planes - */
@@ -217,9 +229,8 @@
   font-family: $regular, sans-serif;
   font-weight: 400;
   font-size: 20px;
-  width: 310px;
   padding-left: 20px;
-  padding-right: 10px;
+  padding-right: 1;
   z-index: 1;
   gap: 0px;
 }
@@ -340,10 +351,9 @@ width: 160px;
   .about-text {
     font-family: "Inter", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 30px;
     margin-bottom: 30px;
-    line-height: 20px;
-    letter-spacing: 0.5px;
+    line-height: 35px;
   }
   
 .about-down{
@@ -387,6 +397,41 @@ width: 160px;
     outline: none;
     margin-right: 30px;
   }
+
+  .portafolio{
+    width: auto;
+  }
+  .btn-portfolio {
+            background-color: #d6575d;
+            border: none;
+            padding: 10px;
+            font-family: "Inter", sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            width: 60%;
+            margin-bottom: 30px;
+            height: 50px;
+            border-radius: 10px;
+            color: #f3f3f3;
+            box-shadow: 0 0.4rem #000000;
+            cursor: pointer;
+          }
+          
+          .btn-portfolio:active {
+            color: white;
+            box-shadow: 0 0.4rem #000000;
+            transform: translateY(0.2rem);
+          }
+          
+          .btn-portfolio:hover:not(:disabled) {
+            background: #F68E94;
+            color: white;
+          }
+          
+          .btn-portfolio:disabled {
+            cursor: pointer;
+            color: #F68E94;
+          }
   
   .span {
     color: $rojo;
@@ -601,49 +646,46 @@ width: 160px;
     width: 125px;
     height: 25px;
   }
-
-.title-client{
-  display: flex;
-    justify-content: center;
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-  }
-
+/* - slider clientes - */
 .clients1{
-  display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    margin-bottom: 50px;
+    width: 75vw;
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+    padding-bottom: 100px;
 }
-.container-client{
+.clients1 .container-client{
   display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  justify-content: center;
+  align-items: center;
+  animation: scroll 20s linear infinite;
+  -webkit-animation: scroll 20s linear infinite;
+  width: calc(200px * 12);
 }
-.icon-client1{
+.clients1 .slide-client{
+  width: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.clients1 .img-client{
+  width: 100%;
+}
+@keyframes scroll {
+  0% {
+    -web-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -web-transform: translateX(calc(-200px*6));
+    transform: translateX(calc(-200px*6));
+  }
+}
+
+.img-client{
   display: flex;
     justify-content: center;
     align-items: center;
     width: 12%;
-}
-.icon-client2{
-  display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-}
-.icon-client3{
-  display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10%;
 }
   
   /* - estilos CTA HOME  - */

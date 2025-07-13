@@ -1124,6 +1124,11 @@
   align-items: flex-start;
   padding-bottom: 50px;
 }
+.proyectos-background .proyectos-divup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .proyectos-background .proyectos-titlem {
   display: flex;
   font-family: "Inter", sans-serif;
@@ -1807,7 +1812,7 @@
 .cta-home {
   display: flex;
   flex-direction: column;
-  padding-bottom: 40px;
+  padding-bottom: 0px;
 }
 
 .title-home {
@@ -1815,7 +1820,11 @@
   margin-bottom: 15px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 38px;
+}
+
+.dot {
+  color: #547BA9;
 }
 
 .titletext-home {
@@ -1823,7 +1832,17 @@
   margin: 0px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 19px;
+}
+
+.header-btn {
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  width: 400px;
+  padding-top: 20px;
+  padding-left: 0px;
+  margin-left: 0px;
 }
 
 .btn-socialmedia {
@@ -1899,8 +1918,10 @@
   margin-top: 0%;
 }
 
-.arrow-home {
-  margin-left: 44px;
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* - estilos planes - */
@@ -2016,9 +2037,8 @@
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  width: 310px;
   padding-left: 20px;
-  padding-right: 10px;
+  padding-right: 1;
   z-index: 1;
   gap: 0px;
 }
@@ -2151,10 +2171,9 @@
 .about-text {
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 30px;
   margin-bottom: 30px;
-  line-height: 20px;
-  letter-spacing: 0.5px;
+  line-height: 35px;
 }
 
 .about-down {
@@ -2201,6 +2220,42 @@
   text-decoration: none;
   outline: none;
   margin-right: 30px;
+}
+
+.portafolio {
+  width: auto;
+}
+
+.btn-portfolio {
+  background-color: #d6575d;
+  border: none;
+  padding: 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  width: 60%;
+  margin-bottom: 30px;
+  height: 50px;
+  border-radius: 10px;
+  color: #f3f3f3;
+  box-shadow: 0 0.4rem #000000;
+  cursor: pointer;
+}
+
+.btn-portfolio:active {
+  color: white;
+  box-shadow: 0 0.4rem #000000;
+  transform: translateY(0.2rem);
+}
+
+.btn-portfolio:hover:not(:disabled) {
+  background: #F68E94;
+  color: white;
+}
+
+.btn-portfolio:disabled {
+  cursor: pointer;
+  color: #F68E94;
 }
 
 .span {
@@ -2418,52 +2473,49 @@
   height: 25px;
 }
 
-.title-client {
-  display: flex;
-  justify-content: center;
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-}
-
+/* - slider clientes - */
 .clients1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  margin-bottom: 50px;
+  width: 75vw;
+  height: auto;
+  overflow: hidden;
+  margin: auto;
+  padding-bottom: 100px;
 }
 
-.container-client {
+.clients1 .container-client {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  animation: scroll 20s linear infinite;
+  -webkit-animation: scroll 20s linear infinite;
+  width: 2400px;
 }
 
-.icon-client1 {
+.clients1 .slide-client {
+  width: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.clients1 .img-client {
+  width: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    -web-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -web-transform: translateX(-1200px);
+    transform: translateX(-1200px);
+  }
+}
+.img-client {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 12%;
-}
-
-.icon-client2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20%;
-}
-
-.icon-client3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 10%;
 }
 
 /* - estilos CTA HOME  - */
@@ -2527,140 +2579,6 @@
   background-color: #fbfbfb;
 }
 
-.dark-mode {
-  color: #ffffff;
-  background-color: #060b34;
-}
-
-body.dark-mode {
-  background-color: #060b34;
-}
-
-.dark-mode .header-text,
-.dark-mode .header-textp,
-.dark-mode .header-textm,
-.dark-mode .header-textd {
-  color: #1b1b1d !important;
-}
-
-.dark-mode .cards {
-  background-color: rgb(24, 30, 75) 4;
-}
-
-.dark-mode .nav-link {
-  color: #ffffff;
-}
-
-.dark-mode .btn-social {
-  position: relative;
-  display: inline-block;
-  width: 105px;
-  height: 27px;
-  text-align: center;
-  font-size: 16px;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  text-decoration: none;
-  color: #f3f3f3;
-  background: transparent;
-  cursor: pointer;
-  transition: ease-out 0.3s;
-  border: 2px solid #f3f3f3;
-  border-radius: 10px;
-  box-shadow: inset 0 0 0 0;
-}
-
-.dark-mode .btn-social:hover {
-  color: #f3f3f3;
-  box-shadow: inset 0 -100px 0 0 #d6575d;
-  border: 2px solid #d6575d;
-}
-
-.dark-mode .btn-social:active {
-  transform: scale(0.9);
-}
-
-/* DARK MODE BUTTON */
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  border: none;
-  background: #d6575d;
-  color: #ffffff;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  overflow: hidden;
-  position: absolute;
-  left: 91%;
-  bottom: 4%;
-  place-content: center;
-  transition: background 300ms, transform 200ms;
-  font-weight: 500;
-  font-family: "Inter", sans-serif;
-}
-
-.button-text {
-  position: absolute;
-  inset: 0;
-  animation: text-rotation 8s linear infinite;
-}
-
-.button-text > span {
-  position: absolute;
-  transform: rotate(calc(19deg * var(--index)));
-  inset: -8px;
-}
-
-.button-circle {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  overflow: hidden;
-  background: #ffffff;
-  color: #d6575d;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.button-icon {
-  width: 24px;
-  height: 24px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.sun-icon {
-  position: absolute;
-  transform: translate(-150%, 150%);
-}
-
-.moon-icon {
-  position: absolute;
-  transform: translate(0);
-}
-
-.button:hover {
-  background: #1b1b1d;
-  transform: scale(1.05);
-}
-
-.button:hover .moon-icon {
-  transform: translate(150%, -150%);
-}
-
-.button:hover .sun-icon {
-  transform: translate(0);
-}
-
-@keyframes text-rotation {
-  to {
-    rotate: 360deg;
-  }
-}
 .alinks {
   list-style-type: none;
   text-decoration: none;
@@ -3122,13 +3040,35 @@ body.dark-mode {
     height: 24px;
     margin-left: 0px;
   }
+  .plans-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .plans-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .plans-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    gap: 0px;
+    padding-right: 0px;
+  }
   .about {
     background-color: #1b1b1d;
     color: #f3f3f3;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
     padding-top: 100px;
     padding-bottom: 50px;
     width: 100%;
@@ -3164,6 +3104,15 @@ body.dark-mode {
   .about-right {
     padding-left: 50px;
     padding-right: 50px;
+  }
+  .container-exp {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 80px;
   }
   .services {
     display: flex;
@@ -3574,6 +3523,7 @@ body.dark-mode {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding-bottom: 50px;
   }
   .proyectos-background .proyectos-title {
@@ -3825,6 +3775,18 @@ body.dark-mode {
     padding-bottom: 100px;
     margin-left: 44px;
     margin-right: 44px;
+  }
+  .proyectos-background .proyectos-divup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .proyectos-background .plans-icon {
+    width: 100px;
+    height: 100px;
+    transform: rotate(30deg);
+    padding-bottom: 40px;
   }
   .proyectos-background .proyectos-containerm {
     display: flex;
@@ -4625,13 +4587,163 @@ body.dark-mode {
     height: 24px;
     margin-left: 0px;
   }
+  .plans-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .plans-second-line {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 10px;
+    letter-spacing: 0.5px;
+  }
+  .plans-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 0px;
+    letter-spacing: 0.5px;
+    width: 520px;
+  }
+  .plans-icon {
+    width: 90px;
+    height: 90px;
+    transform: rotate(30deg);
+  }
+  .plans-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .plans-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    gap: 0px;
+    padding-right: 0px;
+  }
+  .plans-card1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    border: 2px solid #1b1b1d;
+    border-radius: 25px;
+    padding-left: 20px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .plans-card1:hover::before {
+    content: "";
+    width: 350%;
+    height: 40%;
+    position: absolute;
+    top: 140px;
+    left: -450px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 25px;
+    background: linear-gradient(180deg, transparent, #d6575d, #955fdd, transparent);
+    z-index: -1;
+    transition: box-shadow 300ms;
+    animation: rotation_481 5000ms infinite linear;
+  }
+  .plans-card1:hover::after {
+    content: "";
+    position: absolute;
+    background: #f3f3f3;
+    inset: 5px;
+    border-radius: 25px;
+  }
+  .plans-card-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0px;
+    padding-top: 20px;
+    z-index: 1;
+  }
+  .plans-card-text {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 20px;
+    padding-left: 0px;
+    padding-right: 10px;
+    z-index: 1;
+  }
+  .plans-card-list {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 10px;
+    z-index: 1;
+    gap: 0px;
+  }
+  .plans-price {
+    display: flex;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 60px;
+    padding-left: 0px;
+    padding-right: 10px;
+    z-index: 1;
+  }
+  .plans-btn {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    text-decoration: none;
+    padding-right: 20px;
+  }
+  .plans-contact {
+    background-color: #d6575d;
+    border: none;
+    padding: 10px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    width: 98%;
+    height: 36px;
+    border-radius: 10px;
+    color: #f3f3f3;
+    box-shadow: 0 0.4rem #000000;
+    cursor: pointer;
+    margin-bottom: 50px;
+  }
+  .plans-contact:active {
+    color: white;
+    box-shadow: 0 0.2rem #000000;
+    transform: translateY(0.2rem);
+  }
+  .plans-contact:hover:not(:disabled) {
+    background: #F68E94;
+    color: white;
+  }
+  .plans-contact:disabled {
+    cursor: auto;
+    color: #F68E94;
+  }
   .about {
     background-color: #1b1b1d;
     color: #f3f3f3;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 0px;
     padding-top: 100px;
     padding-bottom: 50px;
     width: auto;
@@ -4667,6 +4779,14 @@ body.dark-mode {
   .about-right {
     padding-left: 50px;
     padding-right: 50px;
+  }
+  .container-exp {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 80px;
   }
   .services {
     display: flex;
@@ -4845,19 +4965,19 @@ body.dark-mode {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 20%;
   }
   .icon-client2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 40%;
   }
   .icon-client3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35%;
+    width: 20%;
   }
   .cta-end {
     display: flex;
@@ -5090,6 +5210,18 @@ body.dark-mode {
   }
   .proyectos-background {
     background-color: #f3f3f3;
+  }
+  .proyectos-background .proyectos-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .proyectos-background .plans-icon {
+    width: 100px;
+    height: 100px;
+    transform: rotate(30deg);
+    padding-bottom: 40px;
   }
   .proyectos-background .proyectos {
     padding-top: 50px;
@@ -5345,6 +5477,18 @@ body.dark-mode {
   }
   .proyectos-background {
     background-color: #f3f3f3;
+  }
+  .proyectos-background .proyectos-divup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .proyectos-background .plans-icon {
+    width: 100px;
+    height: 100px;
+    transform: rotate(30deg);
+    padding-bottom: 40px;
   }
   .proyectos-background .proyectos {
     padding-top: 50px;
